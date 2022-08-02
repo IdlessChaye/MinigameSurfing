@@ -69,3 +69,4 @@ obj/
 *.sln
 *.rsp
 .vs
+.vsconfig
