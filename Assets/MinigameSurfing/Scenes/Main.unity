@@ -1670,6 +1670,14 @@ PrefabInstance:
       propertyPath: Camera
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 1014210315, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+      propertyPath: invertX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1014210315, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+      propertyPath: invertY
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1167979787, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.9
