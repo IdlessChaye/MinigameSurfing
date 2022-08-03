@@ -114,7 +114,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   dampingMin: 0
   dampingMax: 1
-  dampingValue: 0.96
+  dampingValue: 1
   isdampingCurve: 0
   elasticityCurve:
     serializedVersion: 2

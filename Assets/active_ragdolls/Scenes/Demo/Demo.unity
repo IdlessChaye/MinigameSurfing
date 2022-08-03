@@ -157,7 +157,7 @@ MonoBehaviour:
     mass: 0.19385026
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -232,7 +232,7 @@ MonoBehaviour:
     mass: 1.7462093
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -274,6 +274,163 @@ MonoBehaviour:
   index: 8
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.16666667
+--- !u!1 &23840607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747415, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &23840609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23840607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5187ca8754a3e0c4a8c9734f3e8164dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999998
+    y: 1.0000002
+    z: 1
+  pointRead:
+    fixedIndex: 0
+    parentIndex: 0
+    childFirstIndex: 0
+    childLastIndex: 7
+    mass: 0
+    colliderMask: 0
+    isFixedPointFreezeRotation: 0
+    damping: 0
+    friction: 0
+    stiffnessWorld: 0
+    stiffnessLocal: 0
+    elasticity: 0
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: 0
+      z: 0
+    structuralShrinkVertical: 0
+    structuralStretchVertical: 0
+    structuralShrinkHorizontal: 0
+    structuralStretchHorizontal: 0
+    shearShrink: 0
+    shearStretch: 0
+    bendingShrinkVertical: 0
+    bendingStretchVertical: 0
+    bendingShrinkHorizontal: 0
+    bendingStretchHorizontal: 0
+    circumferenceShrink: 0
+    circumferenceStretch: 0
+    radius: 0
+    initialLocalPosition:
+      x: 0
+      y: 0
+      z: 0
+    initialPosition:
+      x: 0
+      y: 0
+      z: 0
+    lengthLimitForceScale: 0
+    elasticityVelocity: 0
+  parent: {fileID: 0}
+  childPoints:
+  - {fileID: 1676671431}
+  - {fileID: 178275047}
+  - {fileID: 1708247142}
+  - {fileID: 1017564912}
+  - {fileID: 2072818654}
+  - {fileID: 1604828166}
+  - {fileID: 1992766733}
+  keyWord: 
+  depth: -1
+  index: -1
+  allowCreateAllConstraint: 0
+  pointDepthRateMaxPointDepth: -0.2
+  aDBSetting: {fileID: 11400000, guid: 8bda86cddd73eda45a7868c3af02c35d, type: 2}
+  allPointTransforms:
+  - {fileID: 1676671430}
+  - {fileID: 178275046}
+  - {fileID: 1708247141}
+  - {fileID: 1017564911}
+  - {fileID: 2072818653}
+  - {fileID: 1604828165}
+  - {fileID: 1992766732}
+  - {fileID: 840913957}
+  - {fileID: 1500859555}
+  - {fileID: 1291764553}
+  - {fileID: 1143806061}
+  - {fileID: 1017137251}
+  - {fileID: 479429109}
+  - {fileID: 1437183408}
+  - {fileID: 690924235}
+  - {fileID: 940892212}
+  - {fileID: 2117269602}
+  - {fileID: 1719553477}
+  - {fileID: 183477728}
+  - {fileID: 347669216}
+  - {fileID: 579431651}
+  - {fileID: 1216651182}
+  allPointList:
+  - {fileID: 1676671431}
+  - {fileID: 178275047}
+  - {fileID: 1708247142}
+  - {fileID: 1017564912}
+  - {fileID: 2072818654}
+  - {fileID: 1604828166}
+  - {fileID: 1992766733}
+  - {fileID: 840913958}
+  - {fileID: 1500859556}
+  - {fileID: 1291764554}
+  - {fileID: 1143806062}
+  - {fileID: 1017137252}
+  - {fileID: 479429110}
+  - {fileID: 1437183409}
+  - {fileID: 690924236}
+  - {fileID: 940892213}
+  - {fileID: 2117269603}
+  - {fileID: 1719553478}
+  - {fileID: 183477729}
+  - {fileID: 347669217}
+  - {fileID: 579431652}
+  - {fileID: 1216651183}
+  isUseLocalRadiusAndColliderMask: 0
+  isInitialize: 1
+--- !u!114 &23840610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23840607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fa18d047edd3548856c1a8342b32a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isReadOnly: 0
+  isStatic: 0
+  collideFunc: 1
+  colliderMask: 512
+  unityCollider: {fileID: 23840611}
+  colliderType: 
+--- !u!135 &23840611
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23840607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.11
+  m_Center: {x: 0, y: 0.11, z: 0}
 --- !u!4 &83630825 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5915069675427700095, guid: 22fc3363c0132e245b265cbf4fc8df6f, type: 3}
@@ -313,7 +470,7 @@ MonoBehaviour:
     mass: 0.18659338
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -473,7 +630,7 @@ MonoBehaviour:
     mass: 1.2514739
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -549,7 +706,7 @@ MonoBehaviour:
     mass: 0.18326491
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -697,7 +854,7 @@ MonoBehaviour:
     mass: 0.18326488
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -857,7 +1014,7 @@ MonoBehaviour:
     mass: 0.5511587
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -933,7 +1090,7 @@ MonoBehaviour:
     mass: 3.2870535e+10
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -1020,7 +1177,7 @@ MonoBehaviour:
     mass: 0.1828849
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -1061,6 +1218,158 @@ MonoBehaviour:
   index: 17
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 1
+--- !u!1 &178275045 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747309, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &178275046 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979789, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &178275047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178275045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1.0000004
+    y: 1.0000004
+    z: 1.0000002
+  pointRead:
+    fixedIndex: 1
+    parentIndex: -1
+    childFirstIndex: 8
+    childLastIndex: 9
+    mass: 2.4077312e+10
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 1
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0
+    initialLocalPosition:
+      x: 0.03296652
+      y: 0.8086719
+      z: -0.5873356
+    initialPosition:
+      x: 0
+      y: 0
+      z: 0
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 23840609}
+  childPoints:
+  - {fileID: 1500859556}
+  keyWord: 
+  depth: 0
+  index: 1
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0
+--- !u!1 &183477727 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747319, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &183477728 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979799, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &183477729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183477727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1
+    y: 1.0000001
+    z: 1.0000002
+  pointRead:
+    fixedIndex: 4
+    parentIndex: 17
+    childFirstIndex: 19
+    childLastIndex: 20
+    mass: 1.3037832
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0.037718654
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.044800002
+    initialLocalPosition:
+      x: 0.0000006774966
+      y: 1.0000004
+      z: -0.0000020309217
+    initialPosition:
+      x: 0.0438126
+      y: 0.26743114
+      z: 0.021664992
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 1719553478}
+  childPoints:
+  - {fileID: 347669217}
+  keyWord: 
+  depth: 4
+  index: 18
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0.8
 --- !u!1 &190863965 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747111, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -1095,7 +1404,7 @@ MonoBehaviour:
     mass: 1.6295204
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -1171,7 +1480,7 @@ MonoBehaviour:
     mass: 0.18288487
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -1246,7 +1555,7 @@ MonoBehaviour:
     mass: 1.2514737
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -1322,7 +1631,7 @@ MonoBehaviour:
     mass: 0.5721001
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -1471,7 +1780,7 @@ MonoBehaviour:
     mass: 0.5511591
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -1547,7 +1856,7 @@ MonoBehaviour:
     mass: 1.4140576
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -1623,7 +1932,7 @@ MonoBehaviour:
     mass: 0.5823709
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -1699,7 +2008,7 @@ MonoBehaviour:
     mass: 0.5366101
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -1771,6 +2080,81 @@ Transform:
   m_Father: {fileID: 2145083609}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &347669215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747275, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &347669216 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979755, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &347669217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347669215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1
+    y: 1.0000001
+    z: 1.0000004
+  pointRead:
+    fixedIndex: 4
+    parentIndex: 18
+    childFirstIndex: -1
+    childLastIndex: -1
+    mass: 0.65442586
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.05
+    initialLocalPosition:
+      x: -0.00000075344343
+      y: 1.0000001
+      z: -0.0000012054998
+    initialPosition:
+      x: 0.059415873
+      y: 0.31698033
+      z: 0.03877942
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 183477729}
+  childPoints: []
+  keyWord: 
+  depth: 5
+  index: 19
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 1
 --- !u!1 &380529436 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747139, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -1805,7 +2189,7 @@ MonoBehaviour:
     mass: 1.8036288
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -2088,10 +2472,18 @@ MonoBehaviour:
   blackListOfGenerateTransform: []
   generateTransformList:
   - {fileID: 158068474}
+  - {fileID: 1676671430}
+  - {fileID: 178275046}
+  - {fileID: 1708247141}
+  - {fileID: 1017564911}
+  - {fileID: 2072818653}
+  - {fileID: 1604828165}
+  - {fileID: 1992766732}
   linker: {fileID: 0}
   setting: {fileID: 11400000, guid: 8bda86cddd73eda45a7868c3af02c35d, type: 2}
   allChain:
   - {fileID: 433050744}
+  - {fileID: 23840609}
   isGenerateOnStart: 0
   generatorMode: 0
 --- !u!114 &433050746
@@ -2106,7 +2498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be64ecd761273bf4ab578c188d55c507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bufferTime: 1
+  bufferTime: 0.51
   iteration: 1
   windForceScale: 0
   isDrawGizmo: 1
@@ -2115,19 +2507,133 @@ MonoBehaviour:
   timeScale: 1
   isRunAsync: 1
   isParallel: 1
-  overlapsColliderList: []
+  overlapsColliderList:
+  - {fileID: 433050747}
+  - {fileID: 1168491901}
+  - {fileID: 1776061937}
+  - {fileID: 997641727}
+  - {fileID: 1010990349}
+  - {fileID: 23840610}
   OverlapBox:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   updateMode: 1
   allChain:
   - {fileID: 433050744}
+  - {fileID: 23840609}
   colliderSize: 1
+--- !u!114 &433050747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433050742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fa18d047edd3548856c1a8342b32a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isReadOnly: 0
+  isStatic: 0
+  collideFunc: 1
+  colliderMask: 512
+  unityCollider: {fileID: 433050748}
+  colliderType: 
+--- !u!135 &433050748
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433050742}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.13
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &470399510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5915069675427700095, guid: 22fc3363c0132e245b265cbf4fc8df6f, type: 3}
   m_PrefabInstance: {fileID: 143697482}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &479429108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747313, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &479429109 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979793, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &479429110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479429108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.99999964
+    y: 1
+    z: 1.0000006
+  pointRead:
+    fixedIndex: 3
+    parentIndex: 11
+    childFirstIndex: 13
+    childLastIndex: 14
+    mass: 1.8615077
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0.35046333
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.032400005
+    initialLocalPosition:
+      x: 0.0000014272925
+      y: 1.0000002
+      z: -0.00000082152445
+    initialPosition:
+      x: -0.024977649
+      y: 0.20411539
+      z: 0.00611274
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 1017137252}
+  childPoints:
+  - {fileID: 1437183409}
+  keyWord: 
+  depth: 3
+  index: 12
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0.6
 --- !u!1 &480735539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2324,7 +2830,7 @@ MonoBehaviour:
     mass: 1.2176743
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -2400,7 +2906,7 @@ MonoBehaviour:
     mass: 0.9273618
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -2481,7 +2987,7 @@ MonoBehaviour:
     mass: 1.4140579
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -2557,7 +3063,7 @@ MonoBehaviour:
     mass: 1.8254765
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -2599,6 +3105,81 @@ MonoBehaviour:
   index: 2
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.16666667
+--- !u!1 &579431650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747247, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &579431651 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979727, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &579431652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579431650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999998
+    y: 1.0000006
+    z: 1.0000005
+  pointRead:
+    fixedIndex: 5
+    parentIndex: 5
+    childFirstIndex: -1
+    childLastIndex: -1
+    mass: 0.6302564
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.05
+    initialLocalPosition:
+      x: -0.00000014537788
+      y: 1.0000005
+      z: -0.00000024064852
+    initialPosition:
+      x: -0.000000015289013
+      y: 0.10516744
+      z: -0.000000025308376
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 1604828166}
+  childPoints: []
+  keyWord: 
+  depth: 1
+  index: 20
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 1
 --- !u!1 &587429544 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747215, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -2633,7 +3214,7 @@ MonoBehaviour:
     mass: 1.185043
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -2709,7 +3290,7 @@ MonoBehaviour:
     mass: 1.7462091
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -2785,7 +3366,7 @@ MonoBehaviour:
     mass: 1.2004677
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -2861,7 +3442,7 @@ MonoBehaviour:
     mass: 1.8254759
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -2903,6 +3484,81 @@ MonoBehaviour:
   index: 6
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.16666667
+--- !u!1 &690924234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747273, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &690924235 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979753, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &690924236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690924234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999996
+    y: 1
+    z: 1.0000006
+  pointRead:
+    fixedIndex: 3
+    parentIndex: 13
+    childFirstIndex: -1
+    childLastIndex: -1
+    mass: 0.654426
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.05
+    initialLocalPosition:
+      x: -0.00000017715729
+      y: 1.0000001
+      z: 0.0000027665255
+    initialPosition:
+      x: -0.059416108
+      y: 0.3169802
+      z: 0.038779747
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 1437183409}
+  childPoints: []
+  keyWord: 
+  depth: 5
+  index: 14
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,7 +3686,7 @@ MonoBehaviour:
     mass: 0.18410002
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -3105,7 +3761,7 @@ MonoBehaviour:
     mass: 0.8609461
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -3181,7 +3837,7 @@ MonoBehaviour:
     mass: 1.3846962
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -3257,7 +3913,7 @@ MonoBehaviour:
     mass: 1.667112
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -3333,7 +3989,7 @@ MonoBehaviour:
     mass: 0.53752947
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -3409,7 +4065,7 @@ MonoBehaviour:
     mass: 1.1534202
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -3485,7 +4141,7 @@ MonoBehaviour:
     mass: 1.8566206
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -3527,6 +4183,81 @@ MonoBehaviour:
   index: 4
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.16666667
+--- !u!1 &840913956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747305, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &840913957 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979785, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &840913958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 840913956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999998
+    y: 1.0000006
+    z: 1.0000005
+  pointRead:
+    fixedIndex: 0
+    parentIndex: 0
+    childFirstIndex: -1
+    childLastIndex: -1
+    mass: 0.759092
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.05
+    initialLocalPosition:
+      x: -0.0000000022363296
+      y: 1.0000001
+      z: 0.000000021689758
+    initialPosition:
+      x: -3.0358083e-10
+      y: 0.13574961
+      z: 0.0000000010547581
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 1676671431}
+  childPoints: []
+  keyWord: 
+  depth: 1
+  index: 7
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 1
 --- !u!1 &871641005 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747221, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -3561,7 +4292,7 @@ MonoBehaviour:
     mass: 1.5363463
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -3637,7 +4368,7 @@ MonoBehaviour:
     mass: 1.15342
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -3852,6 +4583,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4237539742831463838, guid: 0963d51aa9da6a14aa09e156bc7450ad, type: 3}
   m_PrefabInstance: {fileID: 263947116}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &940892211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747323, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &940892212 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979803, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &940892213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940892211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1.0000001
+    y: 1.0000006
+    z: 1.0000008
+  pointRead:
+    fixedIndex: 4
+    parentIndex: 4
+    childFirstIndex: 16
+    childLastIndex: 17
+    mass: 2.9248295
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 1
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.0052000005
+    initialLocalPosition:
+      x: 0.0000008976134
+      y: 1.0000002
+      z: 0.00000042351778
+    initialPosition:
+      x: 0.00000007423569
+      y: 0.08306559
+      z: 0.000000036410007
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 2072818654}
+  childPoints:
+  - {fileID: 2117269603}
+  keyWord: 
+  depth: 1
+  index: 15
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0.2
 --- !u!850595691 &953933005
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -3947,7 +4754,7 @@ MonoBehaviour:
     mass: 1.4980936
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -4072,6 +4879,232 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &997641724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747269, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &997641726
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997641724}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.08
+  m_Height: 0.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.14, z: 0}
+--- !u!114 &997641727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997641724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fa18d047edd3548856c1a8342b32a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isReadOnly: 0
+  isStatic: 0
+  collideFunc: 1
+  colliderMask: 512
+  unityCollider: {fileID: 997641726}
+  colliderType: 
+--- !u!1 &1010990346 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747267, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1010990348
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010990346}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.045
+  m_Height: 0.3
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.2, z: 0}
+--- !u!114 &1010990349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010990346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fa18d047edd3548856c1a8342b32a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isReadOnly: 0
+  isStatic: 0
+  collideFunc: 1
+  colliderMask: 512
+  unityCollider: {fileID: 1010990348}
+  colliderType: 
+--- !u!1 &1017137250 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747325, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1017137251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979805, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1017137252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017137250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999997
+    y: 1.0000002
+    z: 1.0000006
+  pointRead:
+    fixedIndex: 3
+    parentIndex: 10
+    childFirstIndex: 12
+    childLastIndex: 13
+    mass: 2.3056364
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0.8373628
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.0176
+    initialLocalPosition:
+      x: -0.000001357415
+      y: 1.0000005
+      z: 0.0000030212527
+    initialPosition:
+      x: -0.009093823
+      y: 0.13999206
+      z: -0.00028792795
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 1143806062}
+  childPoints:
+  - {fileID: 479429110}
+  keyWord: 
+  depth: 2
+  index: 11
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0.4
+--- !u!1 &1017564910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747301, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1017564911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979781, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1017564912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017564910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999995
+    y: 0.99999964
+    z: 1
+  pointRead:
+    fixedIndex: 3
+    parentIndex: -1
+    childFirstIndex: 10
+    childLastIndex: 11
+    mass: 2.4077312e+10
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 1
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0
+    initialLocalPosition:
+      x: 0.0947691
+      y: 0.78705806
+      z: -0.609556
+    initialPosition:
+      x: 0
+      y: 0
+      z: 0
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 23840609}
+  childPoints:
+  - {fileID: 1143806062}
+  keyWord: 
+  depth: 0
+  index: 3
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0
 --- !u!1 &1017730409 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747225, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -4106,7 +5139,7 @@ MonoBehaviour:
     mass: 1.5110657
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -4182,7 +5215,7 @@ MonoBehaviour:
     mass: 1.1371653
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -4258,7 +5291,7 @@ MonoBehaviour:
     mass: 0.540473
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -4334,7 +5367,7 @@ MonoBehaviour:
     mass: 1.4706746
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -4410,7 +5443,7 @@ MonoBehaviour:
     mass: 1.6671116
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -4486,7 +5519,7 @@ MonoBehaviour:
     mass: 0.8740216
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -4528,6 +5561,119 @@ MonoBehaviour:
   index: 50
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.6666667
+--- !u!1 &1143806060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747321, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1143806061 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979801, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1143806062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143806060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.99999976
+    y: 1.0000004
+    z: 1.000001
+  pointRead:
+    fixedIndex: 3
+    parentIndex: 3
+    childFirstIndex: 11
+    childLastIndex: 12
+    mass: 2.9899638
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 1
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.0052000005
+    initialLocalPosition:
+      x: -0.0000016056382
+      y: 0.99999994
+      z: -0.0000009991631
+    initialPosition:
+      x: -0.00000013382781
+      y: 0.08306545
+      z: -0.00000008265033
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 1017564912}
+  childPoints:
+  - {fileID: 1017137252}
+  keyWord: 
+  depth: 1
+  index: 10
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0.2
+--- !u!1 &1168491898 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747391, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1168491900
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168491898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.08
+  m_Height: 0.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.14, z: 0}
+--- !u!114 &1168491901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1168491898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fa18d047edd3548856c1a8342b32a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isReadOnly: 0
+  isStatic: 0
+  collideFunc: 1
+  colliderMask: 512
+  unityCollider: {fileID: 1168491900}
+  colliderType: 
 --- !u!1 &1194615108 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747227, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -4562,7 +5708,7 @@ MonoBehaviour:
     mass: 1.2176749
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -4668,6 +5814,81 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1216651181 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747233, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1216651182 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979713, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1216651183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216651181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999998
+    y: 1.0000006
+    z: 1.0000005
+  pointRead:
+    fixedIndex: 6
+    parentIndex: 6
+    childFirstIndex: -1
+    childLastIndex: -1
+    mass: 0.7495833
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.05
+    initialLocalPosition:
+      x: -0.0000000035867171
+      y: 1.0000005
+      z: -0.00000023619296
+    initialPosition:
+      x: -3.7720568e-10
+      y: 0.1051672
+      z: -0.000000024839741
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 1992766733}
+  childPoints: []
+  keyWord: 
+  depth: 1
+  index: 21
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 1
 --- !u!1 &1235576096 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747121, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -4702,7 +5923,7 @@ MonoBehaviour:
     mass: 0.18455517
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -4777,7 +5998,7 @@ MonoBehaviour:
     mass: 0.5721003
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -4819,6 +6040,81 @@ MonoBehaviour:
   index: 26
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.8333333
+--- !u!1 &1291764552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747299, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1291764553 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979779, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1291764554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1291764552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1
+    y: 1.0000002
+    z: 1.0000001
+  pointRead:
+    fixedIndex: 2
+    parentIndex: 2
+    childFirstIndex: -1
+    childLastIndex: -1
+    mass: 0.8870967
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.05
+    initialLocalPosition:
+      x: -0.0066211396
+      y: 0.9995276
+      z: -0.03001701
+    initialPosition:
+      x: -0.001056793
+      y: 0.1595331
+      z: -0.0047909697
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 1708247142}
+  childPoints: []
+  keyWord: 
+  depth: 1
+  index: 9
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 1
 --- !u!1 &1303644910 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747219, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -4853,7 +6149,7 @@ MonoBehaviour:
     mass: 1.847418
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -4929,7 +6225,7 @@ MonoBehaviour:
     mass: 1.1850429
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -5005,7 +6301,7 @@ MonoBehaviour:
     mass: 1.80363
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1
@@ -5081,7 +6377,7 @@ MonoBehaviour:
     mass: 0.19385026
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -5156,7 +6452,7 @@ MonoBehaviour:
     mass: 1.2004683
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -5232,7 +6528,7 @@ MonoBehaviour:
     mass: 1.4980944
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -5274,6 +6570,82 @@ MonoBehaviour:
   index: 13
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.33333334
+--- !u!1 &1437183407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747317, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1437183408 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979797, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1437183409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1437183407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.99999964
+    y: 1.0000001
+    z: 1.0000006
+  pointRead:
+    fixedIndex: 3
+    parentIndex: 12
+    childFirstIndex: 14
+    childLastIndex: 15
+    mass: 1.3037834
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0.037718654
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.044800002
+    initialLocalPosition:
+      x: -0.0000012488714
+      y: 1.0000001
+      z: -0.0000001253089
+    initialPosition:
+      x: -0.04381277
+      y: 0.26743102
+      z: 0.021665087
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 479429110}
+  childPoints:
+  - {fileID: 690924236}
+  keyWord: 
+  depth: 4
+  index: 13
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0.8
 --- !u!1 &1495526185 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747133, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -5308,7 +6680,7 @@ MonoBehaviour:
     mass: 0.8543095
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -5350,6 +6722,81 @@ MonoBehaviour:
   index: 60
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.6666667
+--- !u!1 &1500859554 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747297, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1500859555 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979777, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1500859556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1500859554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1
+    y: 1.0000004
+    z: 1.0000005
+  pointRead:
+    fixedIndex: 1
+    parentIndex: 1
+    childFirstIndex: -1
+    childLastIndex: -1
+    mass: 0.80847293
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.05
+    initialLocalPosition:
+      x: 0.006621884
+      y: 0.9995277
+      z: -0.030016864
+    initialPosition:
+      x: 0.001056911
+      y: 0.15953304
+      z: -0.0047909436
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 178275047}
+  childPoints: []
+  keyWord: 
+  depth: 1
+  index: 8
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 1
 --- !u!1 &1505389181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747145, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -5384,7 +6831,7 @@ MonoBehaviour:
     mass: 1.5110649
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -5460,7 +6907,7 @@ MonoBehaviour:
     mass: 0.87402177
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -5541,7 +6988,7 @@ MonoBehaviour:
     mass: 0.89629704
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -5652,6 +7099,82 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1604828164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747243, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1604828165 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979723, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1604828166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604828164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999998
+    y: 1.0000007
+    z: 1.0000006
+  pointRead:
+    fixedIndex: 5
+    parentIndex: -1
+    childFirstIndex: 20
+    childLastIndex: 21
+    mass: 2.4077312e+10
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 1
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0
+    initialLocalPosition:
+      x: -0.5503814
+      y: 0.81382066
+      z: 0.18648359
+    initialPosition:
+      x: 0
+      y: 0
+      z: 0
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 23840609}
+  childPoints:
+  - {fileID: 579431652}
+  keyWord: 
+  depth: 0
+  index: 5
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0
 --- !u!1 &1613162433 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747149, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -5686,7 +7209,7 @@ MonoBehaviour:
     mass: 0.89629674
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -5762,7 +7285,7 @@ MonoBehaviour:
     mass: 0.19740449
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -5837,7 +7360,7 @@ MonoBehaviour:
     mass: 0.18409997
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -5912,7 +7435,7 @@ MonoBehaviour:
     mass: 1.5363467
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -5954,6 +7477,82 @@ MonoBehaviour:
   index: 33
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.33333334
+--- !u!1 &1676671429 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747351, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1676671430 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979831, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1676671431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1676671429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999998
+    y: 1.0000002
+    z: 1.0000004
+  pointRead:
+    fixedIndex: 0
+    parentIndex: -1
+    childFirstIndex: 7
+    childLastIndex: 8
+    mass: 2.4077312e+10
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 1
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0
+    initialLocalPosition:
+      x: -0.007035535
+      y: 0.80766326
+      z: -0.5896021
+    initialPosition:
+      x: 0
+      y: 0
+      z: 0
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 23840609}
+  childPoints:
+  - {fileID: 840913958}
+  keyWord: 
+  depth: 0
+  index: 0
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0
 --- !u!1 &1698436154 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747105, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -5988,7 +7587,7 @@ MonoBehaviour:
     mass: 0.86094594
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -6064,7 +7663,7 @@ MonoBehaviour:
     mass: 0.92736197
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -6106,6 +7705,158 @@ MonoBehaviour:
   index: 25
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.6666667
+--- !u!1 &1708247140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747311, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1708247141 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979791, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1708247142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708247140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1.0000001
+    y: 1.0000002
+    z: 1.0000001
+  pointRead:
+    fixedIndex: 2
+    parentIndex: -1
+    childFirstIndex: 9
+    childLastIndex: 10
+    mass: 2.4077312e+10
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 1
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0
+    initialLocalPosition:
+      x: -0.04648199
+      y: 0.8082374
+      z: -0.58701944
+    initialPosition:
+      x: 0
+      y: 0
+      z: 0
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 23840609}
+  childPoints:
+  - {fileID: 1291764554}
+  keyWord: 
+  depth: 0
+  index: 2
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0
+--- !u!1 &1719553476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747315, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1719553477 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979795, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1719553478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719553476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1
+    y: 1.0000005
+    z: 1.0000007
+  pointRead:
+    fixedIndex: 4
+    parentIndex: 16
+    childFirstIndex: 18
+    childLastIndex: 19
+    mass: 1.8615074
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0.35046333
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.032400005
+    initialLocalPosition:
+      x: -0.0000014662877
+      y: 1.0000004
+      z: -0.00000019382168
+    initialPosition:
+      x: 0.02497749
+      y: 0.20411548
+      z: 0.006112752
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 2117269603}
+  childPoints:
+  - {fileID: 183477729}
+  keyWord: 
+  depth: 3
+  index: 17
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0.6
 --- !u!1 &1750164179 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747257, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -6140,7 +7891,7 @@ MonoBehaviour:
     mass: 0.8804746
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -6263,7 +8014,7 @@ MonoBehaviour:
     mass: 1.4706748
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -6305,6 +8056,43 @@ MonoBehaviour:
   index: 48
   allowCreateAllConstraint: 1
   pointDepthRateMaxPointDepth: 0.33333334
+--- !u!1 &1776061934 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747389, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!136 &1776061936
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776061934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.045
+  m_Height: 0.3
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.2, z: 0}
+--- !u!114 &1776061937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776061934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fa18d047edd3548856c1a8342b32a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isReadOnly: 0
+  isStatic: 0
+  collideFunc: 1
+  colliderMask: 512
+  unityCollider: {fileID: 1776061936}
+  colliderType: 
 --- !u!1 &1782208728 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747171, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -6339,7 +8127,7 @@ MonoBehaviour:
     mass: 1.2680869
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.6039203
@@ -6415,7 +8203,7 @@ MonoBehaviour:
     mass: 0.5375295
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -6548,7 +8336,7 @@ MonoBehaviour:
     mass: 0.94262433
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -6736,7 +8524,7 @@ MonoBehaviour:
     mass: 0.5394602
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -6812,7 +8600,7 @@ MonoBehaviour:
     mass: 0.18659317
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0
@@ -6917,6 +8705,82 @@ ReflectionProbe:
   m_UseOcclusionCulling: 1
   m_Importance: 1
   m_CustomBakedTexture: {fileID: 0}
+--- !u!1 &1992766731 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747245, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1992766732 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979725, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1992766733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992766731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 0.9999998
+    y: 1.0000007
+    z: 1.0000006
+  pointRead:
+    fixedIndex: 6
+    parentIndex: -1
+    childFirstIndex: 21
+    childLastIndex: 22
+    mass: 2.4077312e+10
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 1
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0
+    initialLocalPosition:
+      x: 0.5389257
+      y: 0.82107264
+      z: 0.18814565
+    initialPosition:
+      x: 0
+      y: 0
+      z: 0
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 23840609}
+  childPoints:
+  - {fileID: 1216651183}
+  keyWord: 
+  depth: 0
+  index: 6
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0
 --- !u!1 &2032818213 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747169, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -6951,7 +8815,7 @@ MonoBehaviour:
     mass: 1.5486746
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.94615793
@@ -7004,6 +8868,18 @@ PrefabInstance:
       propertyPath: Camera
       value: 
       objectReference: {fileID: 963194225}
+    - target: {fileID: 1167747345, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167747351, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1167747359, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8894856259471134341, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7054,6 +8930,82 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+--- !u!1 &2072818652 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747303, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2072818653 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979783, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2072818654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072818652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1.0000001
+    y: 1.0000001
+    z: 1.0000004
+  pointRead:
+    fixedIndex: 4
+    parentIndex: -1
+    childFirstIndex: 15
+    childLastIndex: 16
+    mass: 2.4077312e+10
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 1
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0
+    initialLocalPosition:
+      x: -0.1084889
+      y: 0.7859499
+      z: -0.6086978
+    initialPosition:
+      x: 0
+      y: 0
+      z: 0
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 23840609}
+  childPoints:
+  - {fileID: 940892213}
+  keyWord: 
+  depth: 0
+  index: 4
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0
 --- !u!1 &2081210895 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747163, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -7088,7 +9040,7 @@ MonoBehaviour:
     mass: 0.54047275
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -7164,7 +9116,7 @@ MonoBehaviour:
     mass: 0.5394601
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.019584298
@@ -7240,7 +9192,7 @@ MonoBehaviour:
     mass: 0.8804742
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 0.20697469
@@ -7287,6 +9239,82 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4237539742831463838, guid: 0963d51aa9da6a14aa09e156bc7450ad, type: 3}
   m_PrefabInstance: {fileID: 4237539742083905609}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2117269601 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1167747327, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2117269602 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1167979807, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
+  m_PrefabInstance: {fileID: 2061624023}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2117269603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117269601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77d0d7e4f716e4442b0c16f5b4a1b025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialScale:
+    x: 1
+    y: 1.0000004
+    z: 1.0000005
+  pointRead:
+    fixedIndex: 4
+    parentIndex: 15
+    childFirstIndex: 17
+    childLastIndex: 18
+    mass: 2.3056362
+    colliderMask: -1
+    isFixedPointFreezeRotation: 0
+    damping: 1
+    friction: 1
+    stiffnessWorld: 0
+    stiffnessLocal: 0.8373628
+    elasticity: 0.3
+    moveInert: 0
+    velocityIncrease: 0
+    gravity:
+      x: 0
+      y: -0.49050003
+      z: 0
+    structuralShrinkVertical: 0.5
+    structuralStretchVertical: 0.5
+    structuralShrinkHorizontal: 0.5
+    structuralStretchHorizontal: 0.5
+    shearShrink: 0.5
+    shearStretch: 0.5
+    bendingShrinkVertical: 0.5
+    bendingStretchVertical: 0.5
+    bendingShrinkHorizontal: 0.5
+    bendingStretchHorizontal: 0.5
+    circumferenceShrink: 0.5
+    circumferenceStretch: 0.5
+    radius: 0.0176
+    initialLocalPosition:
+      x: -0.00000020499739
+      y: 1.0000006
+      z: 0.00000005058039
+    initialPosition:
+      x: 0.009093652
+      y: 0.13999212
+      z: -0.0002879674
+    lengthLimitForceScale: 1
+    elasticityVelocity: 0.2
+  parent: {fileID: 940892213}
+  childPoints:
+  - {fileID: 1719553478}
+  keyWord: 
+  depth: 2
+  index: 16
+  allowCreateAllConstraint: 1
+  pointDepthRateMaxPointDepth: 0.4
 --- !u!1 &2126712619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1167747195, guid: bf85673a2f507a54f9f45c91c87c03c2, type: 3}
@@ -7321,7 +9349,7 @@ MonoBehaviour:
     mass: 1.8474184
     colliderMask: -1
     isFixedPointFreezeRotation: 0
-    damping: 0.98
+    damping: 1
     friction: 1
     stiffnessWorld: 0
     stiffnessLocal: 1

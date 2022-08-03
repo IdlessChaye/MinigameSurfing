@@ -12,7 +12,10 @@ namespace ActiveRagdoll {
         [Tooltip("Where the camera should point to. Head by default.")]
         public Transform _lookPoint;
 
-        public float lookSensitivity = 1;
+		public bool isAvoidObstacles = false;
+
+
+		public float lookSensitivity = 1;
         public float scrollSensitivity = 1;
         public bool invertY = false, invertX = false;
 
@@ -103,6 +106,8 @@ namespace ActiveRagdoll {
         }
 
         private void AvoidObstacles() {
+			if (isAvoidObstacles == false)
+				return;
             Ray cameraRay = new Ray(_lookPoint.position, Camera.transform.position - _lookPoint.position);
             bool hit = Physics.Raycast(cameraRay, out RaycastHit hitInfo,
                                        Vector3.Distance(Camera.transform.position, _lookPoint.position), ~dontBlockCamera);
