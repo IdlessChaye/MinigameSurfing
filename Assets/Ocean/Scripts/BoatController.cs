@@ -108,8 +108,6 @@ public class BoatController : MonoBehaviour
 
 		m_rigidbody.AddForce(motorForwardForce);
 
-		Debug.Log($"motorForwardForce: {motorForwardForce}");
-
 
 		m_rigidbody.AddRelativeTorque(
 			m_verticalInput * -m_accelerationTorqueFactor,

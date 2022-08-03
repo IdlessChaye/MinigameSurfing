@@ -6,7 +6,9 @@ namespace ActiveRagdoll {
     // Author: Sergio Abreu García | https://sergioabreu.me
 
     public class AnimationModule : Module {
-        [Header("--- BODY ---")]
+		public float heightOffset = 0.23f;
+
+		[Header("--- BODY ---")]
         /// <summary> Required to set the target rotations of the joints </summary>
         private Quaternion[] _initialJointsRotation;
         private ConfigurableJoint[] _joints;
@@ -97,7 +99,7 @@ namespace ActiveRagdoll {
 
 			_playerTorso.rotation = _animatedTorso.rotation;
 			//_playerTorso.rotation = Quaternion.AngleAxis(-90f, _animatedTorso.right) * _animatedTorso.rotation;
-			_playerTorso.position = _animatedTorso.position + Vector3.up * 0.17f;
+			_playerTorso.position = _animatedTorso.position + Vector3.up * heightOffset;
 			
 		}
 

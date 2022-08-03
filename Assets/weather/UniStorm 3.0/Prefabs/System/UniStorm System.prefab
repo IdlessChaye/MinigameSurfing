@@ -73,7 +73,7 @@ MonoBehaviour:
   UniStormMenuKey: 27
   UniStormCanvas: {fileID: 0}
   m_MenuToggle: 0
-  TabNumber: 3
+  TabNumber: 2
   TimeTabNumbers: 0
   WeatherTabNumbers: 1
   CelestialTabNumbers: 0
@@ -220,7 +220,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 601a6938fd2feec47bb7c99a5497ae9b, type: 2}
   - {fileID: 11400000, guid: 2a15ac63af4bdb746bd5016842226a46, type: 2}
   - {fileID: 11400000, guid: 96e1dfcfb40114941a22ed265a84d385, type: 2}
-  CurrentWeatherType: {fileID: 11400000, guid: 865815ce607d94c4cb41162c44555e7c, type: 2}
+  CurrentWeatherType: {fileID: 11400000, guid: bad5e6801a6223942b1fb7cd7cf611d6, type: 2}
   NextWeatherType: {fileID: 0}
   m_PrecipitationOdds: 50
   TransitionSpeed: 50
