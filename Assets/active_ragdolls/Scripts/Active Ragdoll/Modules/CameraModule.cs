@@ -12,15 +12,14 @@ namespace ActiveRagdoll {
         [Tooltip("Where the camera should point to. Head by default.")]
         public Transform _lookPoint;
 
-		public bool isAvoidObstacles = false;
-
-
 		public float lookSensitivity = 1;
         public float scrollSensitivity = 1;
         public bool invertY = false, invertX = false;
 
 		public GameObject Camera;
-        private Vector2 _cameraRotation;
+		public bool isAvoidObstacles = false;
+
+		private Vector2 _cameraRotation;
         private Vector2 _inputDelta;
 
 
