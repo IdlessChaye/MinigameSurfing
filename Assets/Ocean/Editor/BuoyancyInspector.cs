@@ -52,8 +52,18 @@ public class BuoyancyInspector  : Editor{
 		if(GUILayout.Button("?",GUILayout.MaxWidth(20))) {
 			EditorUtility.DisplayDialog("Material Render Queue","Set the object's material render queue to something that suits you. Useful for not showing shore lines under boat.","OK");
 		}
-
 		EditorGUILayout.EndHorizontal();
+
+		EditorGUILayout.BeginHorizontal();
+		EditorGUILayout.LabelField("isSyncWithSea", GUILayout.MaxWidth(130));
+		buoyancy.isSyncWithSea = EditorGUILayout.Toggle(buoyancy.isSyncWithSea);
+		EditorGUILayout.EndHorizontal();
+
+		EditorGUILayout.BeginHorizontal();
+		EditorGUILayout.LabelField("isBuoyancy", GUILayout.MaxWidth(130));
+		buoyancy.isBuoyancy = EditorGUILayout.Toggle(buoyancy.isBuoyancy);
+		EditorGUILayout.EndHorizontal();
+
 		EditorGUILayout.BeginHorizontal();
 		EditorGUILayout.LabelField("More Accurate", GUILayout.MaxWidth(130));
 		buoyancy.moreAccurate = EditorGUILayout.Toggle(buoyancy.moreAccurate);

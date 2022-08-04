@@ -4,13 +4,9 @@ using System.Collections.Generic;
 
 public class BoatController : MonoBehaviour
 {
+	[SerializeField] private bool _isMotoring = false;
 
 	[SerializeField] private List<GameObject> m_motors;
-
-	[SerializeField] private bool m_enableAudio = true;
-	[SerializeField] private AudioSource m_boatAudioSource;
-	[SerializeField] private float m_boatAudioMinPitch = 0.4F;
-	[SerializeField] private float m_boatAudioMaxPitch = 1.2F;
 
 	[SerializeField] public float m_FinalSpeed = 100F;
 	[SerializeField] public float m_InertiaFactor = 0.005F;
@@ -20,6 +16,8 @@ public class BoatController : MonoBehaviour
 
 	[SerializeField] private float m_VeloDamp = 1F;
 	[SerializeField] private float m_Force = 1F;
+
+	public bool isMotoring { get { return _isMotoring; } }
 
 	private float m_verticalInput = 0F;
 	private float m_horizontalInput = 0F;
@@ -34,24 +32,12 @@ public class BoatController : MonoBehaviour
 
 	void Start()
 	{
-		// base.Start();
 		m_transform = transform;
 		m_rigidbody = GetComponent<Rigidbody>();
-		// m_rigidbody.drag = 1;
-		//  m_rigidbody.angularDrag = 1;
+		
 		accelBreak = m_FinalSpeed * 0.3f;
 
-		initPosition();
-
 		_buoyancy = GetComponent<Buoyancy>();
-	}
-
-	public void initPosition()
-	{
-#if UNITY_ANDROID && !UNITY_EDITOR
-		m_androidInputInit.x = Input.acceleration.y;
-		m_androidInputInit.y = Input.acceleration.x;
-#endif
 	}
 
 
@@ -71,8 +57,20 @@ public class BoatController : MonoBehaviour
 #endif
 	}
 
+	public bool SetIsMotoring(bool isMotoring)
+	{
+		_isMotoring = isMotoring;
+		return _isMotoring;
+	}
+
 	public void setInputs(float iVerticalInput, float iHorizontalInput)
 	{
+		if (_isMotoring == false)
+		{
+			m_verticalInput = 0;
+			m_horizontalInput = 0;
+			return;
+		}
 		m_verticalInput = iVerticalInput;
 		m_horizontalInput = iHorizontalInput;
 	}
@@ -99,7 +97,7 @@ public class BoatController : MonoBehaviour
 		//	{ accel -= m_FinalSpeed * m_InertiaFactor * 2; }
 		//}
 
-		var motorForwardForce = m_Force * m_transform.forward * (m_verticalInput + 1) / 2;
+		var motorForwardForce = m_Force * m_transform.forward * m_verticalInput; //(m_verticalInput + 1) / 2;
 
 		var veloDir = m_rigidbody.velocity.normalized;
 		var velo = m_rigidbody.velocity.magnitude;
@@ -136,22 +134,6 @@ public class BoatController : MonoBehaviour
 					m_motors[i].transform.localEulerAngles.z
 				);
 			}
-		}
-
-		if (m_enableAudio && m_boatAudioSource != null)
-		{
-
-			float pitchLevel = m_boatAudioMaxPitch * Mathf.Abs(m_verticalInput);
-			if (m_verticalInput < 0)
-				pitchLevel *= 0.7f;
-
-			if (pitchLevel < m_boatAudioMinPitch)
-				pitchLevel = m_boatAudioMinPitch;
-
-
-			float smoothPitchLevel = Lerp(m_boatAudioSource.pitch, pitchLevel, Time.deltaTime * 0.5f);
-
-			m_boatAudioSource.pitch = smoothPitchLevel;
 		}
 	}
 
