@@ -239,8 +239,8 @@ public class Buoyancy : MonoBehaviour
 			Debug.Log($"isInWater: {isInWater}");
 			Debug.Log($"waterHigh: {waterHigh}");
 			Debug.Log($"shipHigh: {shipHigh}");
-			//if (isInWater == false)
-			//	return;
+			if (isInWater == false)
+				return;
 
 			float coef = dampCoeff;
 			int index = 0, k = 0;
