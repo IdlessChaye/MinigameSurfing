@@ -72,7 +72,6 @@ MonoBehaviour:
   fixedUpdate: 0
   forceDepth: 1
   lodSkipFrames: 4
-  canCheckBuoyancyNow: 
   renderQueue: 2521
   defaultLOD: 8
   fixedTiles: 1

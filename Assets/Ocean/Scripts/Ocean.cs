@@ -89,7 +89,8 @@ public class Ocean : MonoBehaviour {
 	//if the buoyancy script is safe to check height location
 	//tells other scripts that want to access water height data that it is safe to do now.
 	//this applies only if the spread job over x frames is used!
-	public byte[] canCheckBuoyancyNow;
+	private byte[] canCheckBuoyancyNow;
+	public bool canCheckBuoyancy { get { return canCheckBuoyancyNow[0] == 1; } }
 
 	//the renderqueue of the tiles materials
 	public int renderQueue = 2521;

@@ -161,6 +161,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   renderQueue: 2000
+  isSyncWithSea: 0
+  isBuoyancy: 1
   useFixedUpdate: 1
   moreAccurate: 1
   magnitude: 7

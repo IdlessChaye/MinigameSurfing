@@ -101,7 +101,7 @@ public class BoatController : MonoBehaviour
 
 		var veloDir = m_rigidbody.velocity.normalized;
 		var velo = m_rigidbody.velocity.magnitude;
-		if (_buoyancy != null && _buoyancy.IsOnAir == false)
+		if (_buoyancy != null && _buoyancy.isInWater == true)
 			motorForwardForce -= velo * velo * m_VeloDamp * veloDir;
 
 		m_rigidbody.AddForce(motorForwardForce);

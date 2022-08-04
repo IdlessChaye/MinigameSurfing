@@ -61,7 +61,7 @@ public class Buoyancy : MonoBehaviour
 
 	private Transform _transform;
 
-	public bool IsOnAir { get; private set; } = false;
+	public bool isInWater { get; private set; } = false;
 
 	
 
@@ -177,7 +177,6 @@ public class Buoyancy : MonoBehaviour
 
 		if (ocean != null)
 		{
-
 			visible = _renderer.isVisible;
 
 			//put object on the correct height of the sea surface when it has visibilty checks on and it became visible again.
@@ -187,56 +186,67 @@ public class Buoyancy : MonoBehaviour
 				{
 					if (Time.frameCount - lastFrame > 15)
 					{
-						if (isSyncWithSea)
-						{
-							//float off = ocean.GetChoppyAtLocation(_transform.position.x, _transform.position.z);
-							//float y = ocean.GetWaterHeightAtLocation2 (_transform.position.x-off, _transform.position.z);
-							float y = ocean.GetHeightChoppyAtLocation2(_transform.position.x, _transform.position.z);
-							_transform.position = new Vector3(_transform.position.x, y, _transform.position.z);
-						}
+						//if (isSyncWithSea)
+						//{
+						//	//float off = ocean.GetChoppyAtLocation(_transform.position.x, _transform.position.z);
+						//	//float y = ocean.GetWaterHeightAtLocation2 (_transform.position.x-off, _transform.position.z);
+						//	float y = ocean.GetHeightChoppyAtLocation2(_transform.position.x, _transform.position.z);
+						//	_transform.position = new Vector3(_transform.position.x, y, _transform.position.z);
+						//}
 						lastFrame = Time.frameCount;
 					}
 				}
 				lastvisible = visible;
 			}
 
-			//prevent use of gravity when buoyancy is disabled
-			if (cvisible)
+			////prevent use of gravity when buoyancy is disabled
+			//if (cvisible)
+			//{
+			//	if (useGravity)
+			//	{
+			//		if (!visible)
+			//		{
+			//			_rigidbody.useGravity = false;
+			//			if (wvisible && svisible)
+			//				return;
+			//		}
+			//		else
+			//		{
+			//			_rigidbody.useGravity = true;
+			//		}
+			//	}
+			//	else
+			//	{
+			//		if (!visible)
+			//		{ if (wvisible && svisible) return; }
+			//	}
+			//}
+
+			if (isSyncWithSea)
 			{
-				if (useGravity)
-				{
-					if (!visible)
-					{
-						_rigidbody.useGravity = false;
-						if (wvisible && svisible)
-							return;
-					}
-					else
-					{
-						_rigidbody.useGravity = true;
-					}
-				}
-				else
-				{
-					if (!visible)
-					{ if (wvisible && svisible) return; }
-				}
+				float y = ocean.GetHeightChoppyAtLocation2(_transform.position.x, _transform.position.z);
+				_transform.position = new Vector3(_transform.position.x, y, _transform.position.z);
 			}
 
-			float coef = dampCoeff;
-			int index = 0, k = 0;
-
-			int ran = (int)Random.Range(0, blobs.Count - 1);
+			float yy = ocean.GetHeightChoppyAtLocation2(_transform.position.x, _transform.position.z);
+			//_transform.position = new Vector3(_transform.position.x, y, _transform.position.z);
+			Debug.Log($"Height: {yy}");
 
 			var rigPosition = _rigidbody.position;
 			var waterHigh = ocean.GetWaterHeightAtLocation2(rigPosition.x, rigPosition.z);
 			var shipHigh = rigPosition.y;
-			IsOnAir = shipHigh - waterHigh - 1 > 0;
-			Debug.Log($"IsOnAir: {IsOnAir}");
+			isInWater = shipHigh < waterHigh;
+			Debug.Log($"isInWater: {isInWater}");
+			Debug.Log($"waterHigh: {waterHigh}");
+			Debug.Log($"shipHigh: {shipHigh}");
+			//if (isInWater == false)
+			//	return;
 
+			float coef = dampCoeff;
+			int index = 0, k = 0;
+			int ran = (int)Random.Range(0, blobs.Count - 1);
 			for (int j = 0; j < blobs.Count; j++)
 			{
-
 				wpos = _transform.TransformPoint(blobs[j]);
 				//get a random blob to apply a force with the choppy waves
 				if (ChoppynessAffectsPosition)
@@ -248,7 +258,7 @@ public class Buoyancy : MonoBehaviour
 
 					if (ocean.enabled)
 					{
-						if (ocean.canCheckBuoyancyNow[0] == 1)
+						if (ocean.canCheckBuoyancy)
 						{
 							float off = 0;
 							if (ocean.choppy_scale > 0)
@@ -291,6 +301,8 @@ public class Buoyancy : MonoBehaviour
 							bbuyancy *= iF;
 						}
 					}
+
+					// Buoyancy
 					_rigidbody.AddForceAtPosition(-Vector3.up * (bbuyancy + coef * damp), wpos);
 					k++;
 				}
@@ -320,6 +332,7 @@ public class Buoyancy : MonoBehaviour
 					{
 						if (ocean.choppy_scale > 0)
 						{
+							// Choppy
 							if (moreAccurate)
 							{
 								if (tack == 0)
@@ -342,6 +355,7 @@ public class Buoyancy : MonoBehaviour
 				{
 					if (!wvisible || visible)
 					{
+						// Windy
 						if (tack == 1)
 							_rigidbody.AddForceAtPosition(new Vector3(ocean.pWindx, 0, ocean.pWindy) * WindFactor * fact2, cpos);
 						else
@@ -383,6 +397,7 @@ public class Buoyancy : MonoBehaviour
 						prevAngleX = currAngleX;
 					}
 
+					// Slide
 					if ((int)accel != 0)
 						_rigidbody.AddRelativeForce(Vector3.forward * accel, ForceMode.Acceleration);
 					if (accel > 0)
