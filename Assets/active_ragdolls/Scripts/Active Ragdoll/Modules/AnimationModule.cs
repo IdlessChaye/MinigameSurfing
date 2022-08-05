@@ -139,7 +139,11 @@ namespace ActiveRagdoll {
 			UpdateLookIK();
 
 			if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonWalk)
-			{ 
+			{
+				UpdateArmsIK();
+			}
+			else if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonWalk)
+			{
 				UpdateArmsIK();
 			}
 		}

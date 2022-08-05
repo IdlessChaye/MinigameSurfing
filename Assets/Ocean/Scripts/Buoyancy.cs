@@ -235,8 +235,8 @@ public class Buoyancy : MonoBehaviour
 			var waterHigh = ocean.GetWaterHeightAtLocation2(rigPosition.x, rigPosition.z);
 			var shipHigh = rigPosition.y;
 			isInWater = shipHigh < waterHigh;
-			if (isInWater == false)
-				return;
+			//if (isInWater == false)
+			//	return;
 
 			float coef = dampCoeff;
 			int index = 0, k = 0;

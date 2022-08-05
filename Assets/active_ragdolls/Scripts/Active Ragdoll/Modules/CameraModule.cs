@@ -24,7 +24,7 @@ namespace ActiveRagdoll {
 
 
         [Header("--- SMOOTHING ---")]
-        public float smoothSpeed = 5;
+        public float smoothSpeed = 20;
         public bool smooth = true;
 
         private Vector3 _smoothedLookPoint, _startDirection;
@@ -39,7 +39,7 @@ namespace ActiveRagdoll {
 
         [Header("--- DISTANCES ---")]
         public float minDistance = 2;
-        public float maxDistance = 5, initialDistance = 3.5f;
+        public float maxDistance = 10, initialDistance = 5f;
 
         private float _currentDistance;
 
