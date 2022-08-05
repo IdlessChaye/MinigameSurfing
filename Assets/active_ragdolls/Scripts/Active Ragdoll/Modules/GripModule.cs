@@ -31,11 +31,17 @@ namespace ActiveRagdoll {
 
 
         public void UseLeftGrip(float weight) {
-            _leftGrip.enabled = weight > leftArmWeightThreshold;
+			if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonWalk)
+			{
+				_leftGrip.enabled = weight > leftArmWeightThreshold;
+			}
         }
 
         public void UseRightGrip(float weight) {
-            _rightGrip.enabled = weight > rightArmWeightThreshold;
+			if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonWalk)
+			{
+				_rightGrip.enabled = weight > rightArmWeightThreshold;
+			}
         }
     }
 } // namespace ActiveRagdoll

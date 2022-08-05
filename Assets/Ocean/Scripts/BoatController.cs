@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using ActiveRagdoll;
 
 public class BoatController : MonoBehaviour
 {
@@ -30,6 +31,14 @@ public class BoatController : MonoBehaviour
 
 	private Buoyancy _buoyancy;
 
+	private static BoatController _instance;
+	public static BoatController Instance => _instance;
+
+	private void Awake()
+	{
+		_instance = this;
+	}
+
 	void Start()
 	{
 		m_transform = transform;
@@ -39,7 +48,6 @@ public class BoatController : MonoBehaviour
 
 		_buoyancy = GetComponent<Buoyancy>();
 	}
-
 
 	void Update()
 	{
@@ -55,7 +63,10 @@ public class BoatController : MonoBehaviour
 #else
 		setInputs(Input.GetAxisRaw("Vertical"), Input.GetAxisRaw("Horizontal"));
 #endif
+
 	}
+
+
 
 	public bool SetIsMotoring(bool isMotoring)
 	{
@@ -77,25 +88,8 @@ public class BoatController : MonoBehaviour
 
 	void FixedUpdate()
 	{
-		//base.FixedUpdate();
-
-		//if (m_verticalInput > 0)
-		//{
-		//	if (accel < m_FinalSpeed)
-		//	{ accel += (m_FinalSpeed * m_InertiaFactor); accel *= m_verticalInput; }
-		//}
-		//else if (m_verticalInput == 0)
-		//{
-		//	if (accel > 0)
-		//	{ accel -= m_FinalSpeed * m_InertiaFactor; }
-		//	if (accel < 0)
-		//	{ accel += m_FinalSpeed * m_InertiaFactor; }
-		//}
-		//else if (m_verticalInput < 0)
-		//{
-		//	if (accel > -accelBreak)
-		//	{ accel -= m_FinalSpeed * m_InertiaFactor * 2; }
-		//}
+		if (_isMotoring == false)
+			return;
 
 		var motorForwardForce = m_Force * m_transform.forward * m_verticalInput; //(m_verticalInput + 1) / 2;
 

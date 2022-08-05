@@ -80,50 +80,56 @@ namespace ActiveRagdoll {
             joint.connectedBody = _activeRagdoll.PhysicalTorso;
         }
 
-        private void FixedUpdate() {
-            UpdateTargetRotation();
-            ApplyCustomDrag();
+        private void Update() {
+			if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonWalk)
+			{
+				UpdateTargetRotation();
+				ApplyCustomDrag();
 
-            switch (_balanceMode) {
-                case BALANCE_MODE.UPRIGHT_TORQUE:
-                    var balancePercent = Vector3.Angle(_activeRagdoll.PhysicalTorso.transform.up,
-                                                         Vector3.up) / 180;
-                    balancePercent = uprightTorqueFunction.Evaluate(balancePercent);
-                    var rot = Quaternion.FromToRotation(_activeRagdoll.PhysicalTorso.transform.up,
-                                                         Vector3.up).normalized;
+				switch (_balanceMode)
+				{
+					case BALANCE_MODE.UPRIGHT_TORQUE:
+						var balancePercent = Vector3.Angle(_activeRagdoll.PhysicalTorso.transform.up,
+															 Vector3.up) / 180;
+						balancePercent = uprightTorqueFunction.Evaluate(balancePercent);
+						var rot = Quaternion.FromToRotation(_activeRagdoll.PhysicalTorso.transform.up,
+															 Vector3.up).normalized;
 
-                    _activeRagdoll.PhysicalTorso.AddTorque(new Vector3(rot.x, rot.y, rot.z)
-                                                                * uprightTorque * balancePercent);
+						_activeRagdoll.PhysicalTorso.AddTorque(new Vector3(rot.x, rot.y, rot.z)
+																	* uprightTorque * balancePercent);
 
-                    var directionAnglePercent = Vector3.SignedAngle(_activeRagdoll.PhysicalTorso.transform.forward,
-                                        TargetDirection, Vector3.up) / 180;
-                    _activeRagdoll.PhysicalTorso.AddRelativeTorque(0, directionAnglePercent * rotationTorque, 0);
-                    break;
+						var directionAnglePercent = Vector3.SignedAngle(_activeRagdoll.PhysicalTorso.transform.forward,
+											TargetDirection, Vector3.up) / 180;
+						_activeRagdoll.PhysicalTorso.AddRelativeTorque(0, directionAnglePercent * rotationTorque, 0);
+						break;
 
-                case BALANCE_MODE.FREEZE_ROTATIONS:
-                    var smoothedRot = Quaternion.Lerp(_activeRagdoll.PhysicalTorso.rotation,
-                                       _targetRotation, Time.fixedDeltaTime * freezeRotationSpeed);
-                    _activeRagdoll.PhysicalTorso.MoveRotation(smoothedRot);
+					case BALANCE_MODE.FREEZE_ROTATIONS:
+						var smoothedRot = Quaternion.Lerp(_activeRagdoll.PhysicalTorso.rotation,
+										   _targetRotation, Time.fixedDeltaTime * freezeRotationSpeed);
+						_activeRagdoll.PhysicalTorso.MoveRotation(smoothedRot);
 
-                    break;
+						break;
 
-                case BALANCE_MODE.STABILIZER_JOINT:
-                    // Move stabilizer to player torso (useless, but improves clarity)
-                    _stabilizerRigidbody.MovePosition(_activeRagdoll.PhysicalTorso.position);
-                    _stabilizerRigidbody.MoveRotation(_targetRotation);
+					case BALANCE_MODE.STABILIZER_JOINT:
+						// Move stabilizer to player torso (useless, but improves clarity)
+						_stabilizerRigidbody.MovePosition(_activeRagdoll.PhysicalTorso.position);
+						_stabilizerRigidbody.MoveRotation(_targetRotation);
 
-                    break;
+						break;
 
-                case BALANCE_MODE.MANUAL_TORQUE:
-                    if (_activeRagdoll.PhysicalTorso.angularVelocity.magnitude < maxManualRotSpeed) {
-                        var force = _torqueInput * manualTorque;
-                        _activeRagdoll.PhysicalTorso.AddRelativeTorque(force.y, 0, force.x);
-                    }
+					case BALANCE_MODE.MANUAL_TORQUE:
+						if (_activeRagdoll.PhysicalTorso.angularVelocity.magnitude < maxManualRotSpeed)
+						{
+							var force = _torqueInput * manualTorque;
+							_activeRagdoll.PhysicalTorso.AddRelativeTorque(force.y, 0, force.x);
+						}
 
-                    break;
+						break;
 
-                default: break;
-            }
+					default:
+						break;
+				}
+			}
         }
 
         private void UpdateTargetRotation() {

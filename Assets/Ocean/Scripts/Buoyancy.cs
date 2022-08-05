@@ -230,15 +230,11 @@ public class Buoyancy : MonoBehaviour
 
 			float yy = ocean.GetHeightChoppyAtLocation2(_transform.position.x, _transform.position.z);
 			//_transform.position = new Vector3(_transform.position.x, y, _transform.position.z);
-			Debug.Log($"Height: {yy}");
 
 			var rigPosition = _rigidbody.position;
 			var waterHigh = ocean.GetWaterHeightAtLocation2(rigPosition.x, rigPosition.z);
 			var shipHigh = rigPosition.y;
 			isInWater = shipHigh < waterHigh;
-			Debug.Log($"isInWater: {isInWater}");
-			Debug.Log($"waterHigh: {waterHigh}");
-			Debug.Log($"shipHigh: {shipHigh}");
 			if (isInWater == false)
 				return;
 
