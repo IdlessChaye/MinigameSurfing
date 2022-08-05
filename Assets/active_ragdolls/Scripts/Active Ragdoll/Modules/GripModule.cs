@@ -17,7 +17,12 @@ namespace ActiveRagdoll {
         public bool canGripYourself = false;
 
         private Gripper _leftGrip, _rightGrip;
-
+		
+		public void UnGrip()
+		{
+			_leftGrip.UnGrip();
+			_rightGrip.UnGrip();
+		}
 
         private void Start() {
 			//var leftHand = _activeRagdoll.GetPhysicalBone(HumanBodyBones.LeftHand).gameObject;

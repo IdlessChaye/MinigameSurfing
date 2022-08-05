@@ -93,7 +93,6 @@ namespace ActiveRagdoll {
 			{
 				rig.isKinematic = isKe;
 			}
-			Debug.Log(isKe);
 		}
 
 		/// <summary> Makes the physical bones match the rotation of the animated ones </summary>

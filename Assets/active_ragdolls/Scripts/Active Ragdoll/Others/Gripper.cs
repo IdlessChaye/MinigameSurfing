@@ -15,6 +15,8 @@ namespace ActiveRagdoll {
 
         private ConfigurableJoint _joint;
         private Grippable _gripped;
+
+		public static bool IsHoldBoat = false;
         
         public void Start() {
             // Start disabled is useful to avoid fake gripping something at the start
@@ -44,18 +46,22 @@ namespace ActiveRagdoll {
                 _gripped.jointMotionsConfig.ApplyTo(ref _joint);
             else
                 GripMod.defaultMotionsConfig.ApplyTo(ref _joint);
+
+			if (whatToGrip.GetComponent<BoatController>() != null)
+			{
+				IsHoldBoat = true;
+			}
         }
 
-        private void UnGrip() {
+        public void UnGrip() {
             if (_joint == null)
                 return;
 
             Destroy(_joint);
             _joint = null;
             _gripped = null;
+			IsHoldBoat = false;
         }
-
-
 
         private void OnCollisionEnter(Collision collision) {
             if (GripMod.onlyUseTriggers)

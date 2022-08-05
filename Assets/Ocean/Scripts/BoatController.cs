@@ -32,6 +32,7 @@ public class BoatController : MonoBehaviour
 	private float accelBreak;
 
 	private Buoyancy _buoyancy;
+	public Buoyancy buoyancy => _buoyancy;
 
 	private static BoatController _instance;
 	public static BoatController Instance => _instance;

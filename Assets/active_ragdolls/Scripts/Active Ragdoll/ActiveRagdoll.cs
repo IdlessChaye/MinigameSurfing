@@ -69,6 +69,7 @@ namespace ActiveRagdoll {
 		public AnimatorHelper AnimatorHelper { get; private set; }
 		public AnimationModule AnimationModule { get; private set; }
 		public CameraModule CameraModule { get; private set; }
+		public GripModule GripModule { get; private set; }
 
         /// <summary> Whether to constantly set the rotation of the Animated Body to the Physical Body's.</summary>
         public bool SyncTorsoPositions { get; set; } = true;
@@ -119,6 +120,11 @@ namespace ActiveRagdoll {
 			if (TryGetComponent(out CameraModule camTemp))
 			{
 				CameraModule = camTemp;
+			}
+
+			if (TryGetComponent(out GripModule gripTemp))
+			{
+				GripModule = gripTemp;
 			}
 
 			if (TryGetComponent(out InputModule temp))

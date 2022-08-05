@@ -38,8 +38,20 @@ public class PersonBoatMananger : MonoBehaviour
 			{
 				SetPersonBoatStatus(PersonBoatStatus.PersonWalk);
 			}
-			Debug.Log(_personBoatStatus.ToString());
 		}
+
+		// 人拉滑板沉入海 就滑板
+		if (IsBoatInWater() && ActiveRagdoll.Gripper.IsHoldBoat && _personBoatStatus == PersonBoatStatus.PersonWalk)
+		{
+			_activeRagdoll.GripModule.UnGrip();
+			SetPersonBoatStatus(PersonBoatStatus.PersonSurfing);
+		}
+
+	}
+
+	private bool IsBoatInWater()
+	{
+		return _boatController.buoyancy.isInWater;
 	}
 
 	public void SetPersonBoatStatus(PersonBoatStatus status)
