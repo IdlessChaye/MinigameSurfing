@@ -82,9 +82,14 @@ namespace ActiveRagdoll {
 			{
 				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSalute);
 			}
-			if (Input.GetKeyDown(KeyCode.F))
+
+			if (Input.GetKeyDown(KeyCode.Q))
 			{
-				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSurfing);
+				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSurfingLeft);
+			}
+			if (Input.GetKeyDown(KeyCode.E))
+			{
+				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSurfingRight);
 			}
 		}
 

@@ -10,5 +10,9 @@ public static class Const
 	public static string AniNamKneelDown = "KneelDown";
 	public static string AniNamRunning = "Running";
 	public static string AniNamSalute = "Salute";
-	public static string AniNamSurfing = "Surfing";
+
+	public static string AniNamSurfingLeft = "SurfingLeft";
+	public static string AniNamSurfingRight = "SurfingRight";
+
+	public static string TagGrippable = "Grippable";
 }

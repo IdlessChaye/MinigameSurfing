@@ -61,22 +61,22 @@ namespace ActiveRagdoll {
             if (GripMod.onlyUseTriggers)
                 return;
 
-            if (collision.rigidbody != null)
+            if (collision.rigidbody != null && collision.transform.tag.Equals(Const.TagGrippable))
                 Grip(collision.rigidbody);
         }
 
         private void OnTriggerEnter(Collider other) {
-            if (other.attachedRigidbody != null)
+            if (other.attachedRigidbody != null && other.tag.Equals(Const.TagGrippable))
                 Grip(other.attachedRigidbody);
         }
 
         private void OnCollisionExit(Collision collision) {
-            if (collision.rigidbody == _lastCollision)
+            if (collision.rigidbody == _lastCollision && collision.transform.tag.Equals(Const.TagGrippable))
                 _lastCollision = null;
         }
 
         private void OnTriggerExit(Collider other) {
-            if (other.attachedRigidbody == _lastCollision)
+            if (other.attachedRigidbody == _lastCollision && other.tag.Equals(Const.TagGrippable))
                 _lastCollision = null;
         }
 

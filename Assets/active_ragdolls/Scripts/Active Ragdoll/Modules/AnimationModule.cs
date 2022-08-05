@@ -72,7 +72,7 @@ namespace ActiveRagdoll {
 			_playerPoseHandler = new HumanPoseHandler(_playerAnimator.GetComponent<Animator>().avatar, _playerAnimator.transform);
 			_animatedTorso = _activeRagdoll.AnimatedTorso;
 			_playerTorso = _activeRagdoll.PlayerTorso;
-			_chest = _activeRagdoll.GetAnimatedBone(HumanBodyBones.Spine);
+			_chest = _animatedAnimator.GetBoneTransform(HumanBodyBones.Spine);
 
 			_initialJointsRotation = new Quaternion[_joints.Length];
             for (int i = 0; i < _joints.Length; i++) {
@@ -98,7 +98,6 @@ namespace ActiveRagdoll {
 			_playerPoseHandler.SetHumanPose(ref humanPose);
 
 			_playerTorso.rotation = _animatedTorso.rotation;
-			//_playerTorso.rotation = Quaternion.AngleAxis(-90f, _animatedTorso.right) * _animatedTorso.rotation;
 			_playerTorso.position = _animatedTorso.position + Vector3.up * heightOffset;
 			
 		}
@@ -117,10 +116,9 @@ namespace ActiveRagdoll {
             ReflectBackwards();
             _targetDir2D = Auxiliary.GetFloorProjection(AimDirection);
             CalculateVerticalPercent();
-
-            UpdateLookIK();
+			UpdateLookIK();
             UpdateArmsIK();
-        }
+		}
 
         /// <summary> Reflect the direction when looking backwards, avoids neck-breaking twists </summary>
         /// <param name=""></param>
@@ -142,7 +140,7 @@ namespace ActiveRagdoll {
             lookVerticalAngle += lookAngleOffset;
             _lookDir = Quaternion.AngleAxis(-lookVerticalAngle, _animatedTorso.right) * _targetDir2D;
 
-            Vector3 lookPoint = _activeRagdoll.GetAnimatedBone(HumanBodyBones.Head).position + _lookDir;
+            Vector3 lookPoint = _animatedAnimator.GetBoneTransform(HumanBodyBones.Head).position + _lookDir;
             _animatorHelper.LookAtPoint(lookPoint);
         }
 

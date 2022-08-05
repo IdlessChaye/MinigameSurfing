@@ -20,10 +20,12 @@ namespace ActiveRagdoll {
 
 
         private void Start() {
-            var leftHand = _activeRagdoll.GetPhysicalBone(HumanBodyBones.LeftHand).gameObject;
-            var rightHand = _activeRagdoll.GetPhysicalBone(HumanBodyBones.RightHand).gameObject;
+			//var leftHand = _activeRagdoll.GetPhysicalBone(HumanBodyBones.LeftHand).gameObject;
+			//var rightHand = _activeRagdoll.GetPhysicalBone(HumanBodyBones.RightHand).gameObject;
+			var leftHand = _activeRagdoll.PlayerAnimator.GetBoneTransform(HumanBodyBones.LeftHand).gameObject;
+			var rightHand = _activeRagdoll.PlayerAnimator.GetBoneTransform(HumanBodyBones.RightHand).gameObject;
 
-            (_leftGrip = leftHand.AddComponent<Gripper>()).GripMod = this;
+			(_leftGrip = leftHand.AddComponent<Gripper>()).GripMod = this;
             (_rightGrip = rightHand.AddComponent<Gripper>()).GripMod = this;
         }
 

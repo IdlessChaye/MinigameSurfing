@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fire
   - Ocean
+  - Grippable
   layers:
   - Default
   - TransparentFX
