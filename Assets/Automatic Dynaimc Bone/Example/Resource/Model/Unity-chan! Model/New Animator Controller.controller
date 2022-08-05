@@ -46,7 +46,7 @@ AnimatorController:
     m_Controller: {fileID: 9100000}
 --- !u!1102 &1102928578534311870
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -73,7 +73,7 @@ AnimatorState:
   m_TimeParameter: 
 --- !u!1107 &1107822269984398926
 AnimatorStateMachine:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,7 +98,7 @@ AnimatorStateMachine:
   m_DefaultState: {fileID: 1102928578534311870}
 --- !u!1102 &4364891730714329332
 AnimatorState:
-  serializedVersion: 5
+  serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
