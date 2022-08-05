@@ -34,12 +34,20 @@ public class BoatController : MonoBehaviour
 	private Buoyancy _buoyancy;
 	public Buoyancy buoyancy => _buoyancy;
 
+	public Rigidbody Rigidbody => m_rigidbody;
+
 	private static BoatController _instance;
 	public static BoatController Instance => _instance;
+
+	public Vector3 initPos;
+	public Quaternion initRot;
 
 	private void Awake()
 	{
 		_instance = this;
+
+		initPos = transform.position;
+		initRot = transform.rotation;
 	}
 
 	void Start()

@@ -75,6 +75,9 @@ namespace ActiveRagdoll {
         public bool SyncTorsoPositions { get; set; } = true;
         public bool SyncTorsoRotations { get; set; } = true;
 
+		public Vector3 initPos;
+		public Quaternion initRot;
+
         private void OnValidate() {
             // Automatically retrieve the necessary references
             var animators = GetComponentsInChildren<Animator>();
@@ -97,7 +100,7 @@ namespace ActiveRagdoll {
 			_instance = this;	
 			ID = _ID_COUNT++;
 
-            if (AnimatedBones == null) AnimatedBones = _animatedTorso?.GetComponentsInChildren<Transform>();
+			if (AnimatedBones == null) AnimatedBones = _animatedTorso?.GetComponentsInChildren<Transform>();
             if (Joints == null) Joints = _physicalTorso?.GetComponentsInChildren<ConfigurableJoint>();
             if (Rigidbodies == null) Rigidbodies = _physicalTorso?.GetComponentsInChildren<Rigidbody>();
 
@@ -140,7 +143,10 @@ namespace ActiveRagdoll {
 			{
 				_playerAnimator = _physicalAnimator;
 			}
-        }
+
+			initPos = _animatedTorso.position;
+			initRot = _animatedTorso.rotation;
+		}
 
         private void GetDefaultBodyParts() {
             _bodyParts.Add(new BodyPart("Head Neck",

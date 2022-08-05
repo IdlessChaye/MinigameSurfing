@@ -29,6 +29,9 @@ namespace ActiveRagdoll {
                 return;
             }
 
+			if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonSurfing)
+				return;
+
             if (_joint != null)
                 return;
 
@@ -61,7 +64,9 @@ namespace ActiveRagdoll {
             _joint = null;
             _gripped = null;
 			IsHoldBoat = false;
-        }
+			enabled = false;
+
+		}
 
         private void OnCollisionEnter(Collision collision) {
             if (GripMod.onlyUseTriggers)
