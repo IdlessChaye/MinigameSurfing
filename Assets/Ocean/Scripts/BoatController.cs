@@ -18,6 +18,8 @@ public class BoatController : MonoBehaviour
 	[SerializeField] private float m_VeloDamp = 1F;
 	[SerializeField] private float m_Force = 1F;
 
+	public Transform boatPlayerPlaceTransform;
+
 	public bool isMotoring { get { return _isMotoring; } }
 
 	private float m_verticalInput = 0F;

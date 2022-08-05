@@ -51,10 +51,12 @@ public class PersonBoatMananger : MonoBehaviour
 			case PersonBoatStatus.PersonWalk:
 				_activeRagdoll.AnimationModule.SetRigidbodyIsKe(false);
 				_boatController.SetIsMotoring(false);
+				_activeRagdoll.CameraModule.PrepareCamera();
 				break;
 			case PersonBoatStatus.PersonSurfing:
 				_activeRagdoll.AnimationModule.SetRigidbodyIsKe(true);
 				_boatController.SetIsMotoring(true);
+				_activeRagdoll.CameraModule.PrepareCamera();
 				break;
 		}
 	}

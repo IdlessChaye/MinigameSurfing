@@ -46,10 +46,10 @@ namespace ActiveRagdoll {
 
         [Header("--- LIMITS ---")]
         [Tooltip("How far can the camera look down.")]
-        public float minVerticalAngle = -30;
+        public float minVerticalAngle = -80;
 
         [Tooltip("How far can the camera look up.")]
-        public float maxVerticalAngle = 60;
+        public float maxVerticalAngle = 80;
 
         [Tooltip("Which layers don't make the camera reposition. Mainly the ActiveRagdoll one.")]
         public LayerMask dontBlockCamera;
@@ -68,15 +68,23 @@ namespace ActiveRagdoll {
 		}
 
         void Start() {
+			PrepareCamera();
+		}
+
+		public void PrepareCamera()
+		{
 			if (Camera == null)
 				return;
-            Camera.transform.parent = transform;
 
-            _smoothedLookPoint = _lookPoint.position;
-            _currentDistance = initialDistance;
+			SetLookPoint();
 
-            _startDirection = _lookPoint.forward;
-        }
+			Camera.transform.parent = transform;
+
+			_smoothedLookPoint = _lookPoint.position;
+			_currentDistance = initialDistance;
+
+			_startDirection = _lookPoint.forward;
+		}
 
         void Update() {
             UpdateCameraInput();

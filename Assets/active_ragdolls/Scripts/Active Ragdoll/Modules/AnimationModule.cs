@@ -116,10 +116,9 @@ namespace ActiveRagdoll {
 			}
 			else if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonSurfing)
 			{
-				var boatTrans = BoatController.Instance.transform;
-				_playerTorso.rotation = boatTrans.rotation;
-				_playerTorso.position = boatTrans.position + Vector3.up * heightOffsetOnBoat;
-				//UpdatePlayerAnimator();
+				var boat_transform = BoatController.Instance.boatPlayerPlaceTransform;
+				_playerTorso.rotation = boat_transform.rotation;
+				_playerTorso.position = boat_transform.position;
 			}
 		}
 
