@@ -68,6 +68,8 @@ namespace ActiveRagdoll {
 
 		public AnimatorHelper AnimatorHelper { get; private set; }
 		public AnimationModule AnimationModule { get; private set; }
+		public CameraModule CameraModule { get; private set; }
+
         /// <summary> Whether to constantly set the rotation of the Animated Body to the Physical Body's.</summary>
         public bool SyncTorsoPositions { get; set; } = true;
         public bool SyncTorsoRotations { get; set; } = true;
@@ -114,7 +116,12 @@ namespace ActiveRagdoll {
 				AnimationModule = aniTemp;
 			}
 
-            if (TryGetComponent(out InputModule temp))
+			if (TryGetComponent(out CameraModule camTemp))
+			{
+				CameraModule = camTemp;
+			}
+
+			if (TryGetComponent(out InputModule temp))
                 Input = temp;
 #if UNITY_EDITOR
             else
@@ -192,7 +199,12 @@ namespace ActiveRagdoll {
             return _physicalAnimator.GetBoneTransform(bone);
         }
 
-        public BodyPart GetBodyPart(string name) {
+		public Transform GetPlayerBone(HumanBodyBones bone)
+		{
+			return _playerAnimator.GetBoneTransform(bone);
+		}
+
+		public BodyPart GetBodyPart(string name) {
             foreach (BodyPart bodyPart in _bodyParts)
                 if (bodyPart.bodyPartName == name) return bodyPart;
 

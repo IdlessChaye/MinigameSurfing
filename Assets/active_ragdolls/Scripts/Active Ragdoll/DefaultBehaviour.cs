@@ -80,16 +80,15 @@ public class DefaultBehaviour : MonoBehaviour
 			_activeRagdoll.AnimatedAnimator.SetBool("moving", true);
 			_activeRagdoll.AnimatedAnimator.SetFloat("speed", GetMovementMagnitude(_movement.magnitude));
 		}
-		else if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonWalk)
+		else if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonSurfing)
 		{
-			bool isRight = _movement.x > 0 ? true : false;
-			if (isRight)
-			{
-				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSurfingRight);
-			}
-			else
+			if (Input.GetKeyDown(KeyCode.A))
 			{
 				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSurfingLeft);
+			}
+			if (Input.GetKeyDown(KeyCode.D))
+			{
+				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSurfingRight);
 			}
 		}
 

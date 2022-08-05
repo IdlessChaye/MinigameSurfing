@@ -80,16 +80,7 @@ namespace ActiveRagdoll {
 			}
 			if (Input.GetKeyDown(KeyCode.T))
 			{
-				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSalute);
-			}
-
-			if (Input.GetKeyDown(KeyCode.Q))
-			{
-				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSurfingLeft);
-			}
-			if (Input.GetKeyDown(KeyCode.E))
-			{
-				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSurfingRight);
+				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSalute); // Test
 			}
 		}
 

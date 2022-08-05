@@ -110,22 +110,17 @@ namespace ActiveRagdoll {
 
 			if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonWalk)
 			{
-				UpdatePlayerAnimator();
+				_playerTorso.rotation = _animatedTorso.rotation;
+				//_playerTorso.rotation = Quaternion.AngleAxis(-90f, _animatedTorso.right) * _animatedTorso.rotation; // for other model
+				_playerTorso.position = _animatedTorso.position + Vector3.up * heightOffset;
 			}
 			else if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonSurfing)
 			{
 				var boatTrans = BoatController.Instance.transform;
-				_playerTorso.position = boatTrans.position + Vector3.up * heightOffsetOnBoat;
 				_playerTorso.rotation = boatTrans.rotation;
-				UpdatePlayerAnimator();
+				_playerTorso.position = boatTrans.position + Vector3.up * heightOffsetOnBoat;
+				//UpdatePlayerAnimator();
 			}
-		}
-
-		public void UpdatePlayerAnimator()
-		{
-			_playerTorso.rotation = _animatedTorso.rotation;
-			//_playerTorso.rotation = Quaternion.AngleAxis(-90f, _animatedTorso.right) * _animatedTorso.rotation; // for other model
-			_playerTorso.position = _animatedTorso.position + Vector3.up * heightOffset;
 		}
 
         private void UpdateIK() {

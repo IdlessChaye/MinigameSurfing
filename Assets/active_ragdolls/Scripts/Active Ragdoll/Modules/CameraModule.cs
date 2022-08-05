@@ -58,9 +58,14 @@ namespace ActiveRagdoll {
         public float cameraRepositionOffset = 0.15f;
 
         private void OnValidate() {
-            if (_lookPoint == null)
-                _lookPoint = _activeRagdoll.GetPhysicalBone(HumanBodyBones.Head);
-        }
+			SetLookPoint();
+		}
+
+		private void SetLookPoint()
+		{
+			if (_lookPoint == null)
+				_lookPoint = _activeRagdoll.GetPlayerBone(HumanBodyBones.Head);
+		}
 
         void Start() {
 			if (Camera == null)
