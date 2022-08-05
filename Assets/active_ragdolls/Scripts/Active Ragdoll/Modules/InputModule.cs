@@ -9,9 +9,12 @@ namespace ActiveRagdoll {
     /// one from the player or from another script) and internal (kind of like sensors, such as
     /// detecting if it's on floor). </summary>
     public class InputModule : Module {
-        // ---------- EXTERNAL INPUT ----------
 
-        public delegate void onMoveDelegate(Vector2 movement);
+		public bool isHoldShift { get; private set; }
+
+		// ---------- EXTERNAL INPUT ----------
+
+		public delegate void onMoveDelegate(Vector2 movement);
         public onMoveDelegate OnMoveDelegates { get; set; }
         public void OnMove(InputValue value) {
 			OnMoveDelegates?.Invoke(value.Get<Vector2>());
@@ -32,7 +35,7 @@ namespace ActiveRagdoll {
         // ---------- INTERNAL INPUT ----------
 
         [Header("--- FLOOR ---")]
-        public float floorDetectionDistance = 0.3f;
+        public float floorDetectionDistance = 1f;
         public float maxFloorSlope = 60;
 
         private bool _isOnFloor = true;
@@ -48,9 +51,45 @@ namespace ActiveRagdoll {
 
         void Update() {
             UpdateOnFloor();
-        }
+			UpdateInputKeyDown();
+			UpdateInputKeyHold();
+		}
 
-        public delegate void onFloorChangedDelegate(bool onFloor);
+		private void UpdateInputKeyHold()
+		{
+			if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+			{
+				isHoldShift = true;
+				//_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamRunning);
+			}
+			else
+			{
+				isHoldShift = false;
+			}
+		}
+
+		private void UpdateInputKeyDown()
+		{
+			if (Input.GetKeyDown(KeyCode.LeftControl))
+			{
+				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamKneelDown);
+			}
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamJumping);
+			}
+			if (Input.GetKeyDown(KeyCode.T))
+			{
+				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSalute);
+			}
+			if (Input.GetKeyDown(KeyCode.F))
+			{
+				_activeRagdoll.AnimationModule.PlayAnimation(Const.AniNamSurfing);
+			}
+		}
+
+
+		public delegate void onFloorChangedDelegate(bool onFloor);
         public onFloorChangedDelegate OnFloorChangedDelegates { get; set; }
         private void UpdateOnFloor() {
             bool lastIsOnFloor = _isOnFloor;

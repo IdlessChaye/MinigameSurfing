@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _activeRagdoll: {fileID: 8894856259471134340}
-  floorDetectionDistance: 0.3
+  floorDetectionDistance: 1
   maxFloorSlope: 60
 --- !u!114 &1014210310
 MonoBehaviour:
@@ -9819,7 +9819,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0000007980854, y: 0.33913746, z: -0.0000004619345}
+  m_ConnectedAnchor: {x: -0.0000007959317, y: 0.33913755, z: 0.0000004917367}
   serializedVersion: 2
   m_SecondaryAxis: {x: -1, y: 0, z: 0}
   m_XMotion: 0
@@ -10207,7 +10207,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000007452132, y: 0.25972542, z: 0.0000000024115656}
+  m_ConnectedAnchor: {x: -0.00000007452132, y: 0.2597235, z: 0.000000002411565}
   serializedVersion: 2
   m_SecondaryAxis: {x: 1, y: 0, z: 0}
   m_XMotion: 0
@@ -10486,7 +10486,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000080507033, y: 0.33913746, z: -0.0000004619345}
+  m_ConnectedAnchor: {x: -0.0000011052473, y: 0.33913755, z: 0.00000048428615}
   serializedVersion: 2
   m_SecondaryAxis: {x: 1, y: 0, z: 0}
   m_XMotion: 0

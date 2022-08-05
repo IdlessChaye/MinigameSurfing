@@ -63,6 +63,7 @@ namespace ActiveRagdoll {
 		}
 
 		public AnimatorHelper AnimatorHelper { get; private set; }
+		public AnimationModule AnimationModule { get; private set; }
         /// <summary> Whether to constantly set the rotation of the Animated Body to the Physical Body's.</summary>
         public bool SyncTorsoPositions { get; set; } = true;
         public bool SyncTorsoRotations { get; set; } = true;
@@ -102,6 +103,12 @@ namespace ActiveRagdoll {
                 bodyPart.Init();
 
             AnimatorHelper = _animatedAnimator.gameObject.AddComponent<AnimatorHelper>();
+
+			if (TryGetComponent(out AnimationModule aniTemp))
+			{
+				AnimationModule = aniTemp;
+			}
+
             if (TryGetComponent(out InputModule temp))
                 Input = temp;
 #if UNITY_EDITOR
