@@ -98,6 +98,7 @@ namespace ActiveRagdoll {
 			_playerPoseHandler.SetHumanPose(ref humanPose);
 
 			_playerTorso.rotation = _animatedTorso.rotation;
+			//_playerTorso.rotation = Quaternion.AngleAxis(-90f, _animatedTorso.right) * _animatedTorso.rotation;
 			_playerTorso.position = _animatedTorso.position + Vector3.up * heightOffset;
 			
 		}
@@ -116,6 +117,7 @@ namespace ActiveRagdoll {
             ReflectBackwards();
             _targetDir2D = Auxiliary.GetFloorProjection(AimDirection);
             CalculateVerticalPercent();
+
 			UpdateLookIK();
             UpdateArmsIK();
 		}

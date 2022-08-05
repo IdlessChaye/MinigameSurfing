@@ -11,7 +11,11 @@ namespace ActiveRagdoll {
 
     [RequireComponent(typeof(InputModule))]
     public class ActiveRagdoll : MonoBehaviour {
-        [Header("--- GENERAL ---")]
+
+		private static ActiveRagdoll _instance;
+		public static ActiveRagdoll Instance => _instance;
+
+		[Header("--- GENERAL ---")]
         [SerializeField] private int _solverIterations = 12;
         [SerializeField] private int _velSolverIterations = 4;
         [SerializeField] private float _maxAngularVelocity = 50;
@@ -87,7 +91,8 @@ namespace ActiveRagdoll {
         }
 
         private void Awake() {
-            ID = _ID_COUNT++;
+			_instance = this;	
+			ID = _ID_COUNT++;
 
             if (AnimatedBones == null) AnimatedBones = _animatedTorso?.GetComponentsInChildren<Transform>();
             if (Joints == null) Joints = _physicalTorso?.GetComponentsInChildren<ConfigurableJoint>();
@@ -116,6 +121,12 @@ namespace ActiveRagdoll {
                 Debug.LogError("InputModule could not be found. An ActiveRagdoll must always have" +
                                 "a peer InputModule.");
 #endif
+
+			// Hack insure player can be null
+			if (_playerAnimator == null)
+			{
+				_playerAnimator = _physicalAnimator;
+			}
         }
 
         private void GetDefaultBodyParts() {

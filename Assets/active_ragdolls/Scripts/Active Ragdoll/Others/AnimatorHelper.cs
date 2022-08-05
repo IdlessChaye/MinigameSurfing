@@ -70,7 +70,23 @@ namespace ActiveRagdoll {
             RightFootTarget = new GameObject("RightFootTarget").transform;
             LeftFootTarget.parent = _targetsParent;
             RightFootTarget.parent = _targetsParent;
-        }
+
+			//DebugTran(_targetsParent);
+			//DebugTran(LeftHandTarget);
+			//DebugTran(RightHandTarget);
+			//DebugTran(LeftHandHint);
+			//DebugTran(RightHandHint);
+			//DebugTran(LeftFootTarget);
+			//DebugTran(RightFootTarget);
+		}
+		private void DebugTran(Transform _transform)
+		{
+			_transform.position = ActiveRagdoll.Instance.PhysicalTorso.transform.position;
+			var debug_cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+			debug_cube.transform.parent = _transform;
+			_transform.position = new Vector3(29, 7, -14);
+		}
+
         private void Update() {
             UpdateIKTransitions();
         }
