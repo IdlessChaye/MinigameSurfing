@@ -96,6 +96,8 @@ MonoBehaviour:
   _animatedAnimator: {fileID: 3033866000549386175}
   _physicalAnimator: {fileID: 1006582939}
   _playerAnimator: {fileID: 1158355593}
+  initPos: {x: 0, y: 0, z: 0}
+  initRot: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &1014210309
 MonoBehaviour:
   m_ObjectHideFlags: 0

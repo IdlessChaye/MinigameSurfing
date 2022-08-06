@@ -151,11 +151,11 @@ namespace ActiveRagdoll {
 
 		public void ResetStatus()
 		{
-			transform.position = initPos + Vector3.up;
+			transform.position = initPos + Vector3.up * 2;
 			transform.rotation = initRot;
-			AnimatedTorso.position = initPos + Vector3.up;
+			AnimatedTorso.position = initPos + Vector3.up * 2;
 			AnimatedTorso.rotation = initRot;
-			PhysicalTorso.position = initPos + Vector3.up;
+			PhysicalTorso.position = initPos + Vector3.up * 2;
 			PhysicalTorso.rotation = initRot;
 		}
         private void GetDefaultBodyParts() {

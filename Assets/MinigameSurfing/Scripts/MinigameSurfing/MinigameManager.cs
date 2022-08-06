@@ -16,6 +16,7 @@ public class MinigameManager : MonoBehaviour
 	private void AwakeSettings()
 	{
 		Cursor.lockState = CursorLockMode.Confined;
+		Application.targetFrameRate = 60;
 	}
 
 }

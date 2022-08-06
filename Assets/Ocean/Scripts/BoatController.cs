@@ -61,7 +61,7 @@ public class BoatController : MonoBehaviour
 		m_rigidbody.isKinematic = true;
 		m_rigidbody.isKinematic = false;
 		m_rigidbody.velocity = Vector3.zero;
-		m_transform.position = initPos + Vector3.up;
+		m_transform.position = initPos + Vector3.up * 2;
 		m_transform.rotation = initRot;
 	}
 	
