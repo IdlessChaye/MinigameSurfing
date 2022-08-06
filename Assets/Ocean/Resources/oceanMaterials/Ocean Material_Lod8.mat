@@ -87,15 +87,15 @@ Material:
     - _WaveOffset: -63.01681
     m_Colors:
     - _Color: {r: 0.3895323, g: 0.6146181, b: 0.5976806, a: 1}
-    - _FakeUnderwaterColor: {r: 0.33780277, g: 0.64705884, b: 0.50629395, a: 1}
+    - _FakeUnderwaterColor: {r: 1, g: 1, b: 1, a: 1}
     - _ReflectColor: {r: 1, g: 1, b: 1, a: 1}
     - _Size: {r: 512, g: 30, b: 512, a: 0}
     - _SpecColor: {r: 1, g: 1, b: 1, a: 1}
     - _SunColor: {r: 0.9705882, g: 0.94341964, b: 0.8849481, a: 1}
     - _SunDir: {r: 0.8974043, g: -0.440096, b: 0.031320572, a: 0}
-    - _SurfaceColor: {r: 0.6905277, g: 0.72140557, b: 0.75735295, a: 1}
+    - _SurfaceColor: {r: 1, g: 0.91764706, b: 0.6745098, a: 1}
     - _SurfaceColorLod1: {r: 0.49545845, g: 0.8381487, b: 0.85294116, a: 1}
-    - _WaterColor: {r: 0.5364403, g: 0.8604701, b: 0.8897059, a: 1}
+    - _WaterColor: {r: 0.20392157, g: 0.25490198, b: 0.25490198, a: 1}
     - _WaterColorLod1: {r: 0.046009947, g: 0.1691676, b: 0.27205884, a: 1}
     - _WaveOffset: {r: -87.81002, g: -87.81002, b: -87.81002, a: -87.81002}
   m_BuildTextureStacks: []
