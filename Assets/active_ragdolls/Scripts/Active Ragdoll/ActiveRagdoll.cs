@@ -151,12 +151,16 @@ namespace ActiveRagdoll {
 
 		public void ResetStatus()
 		{
+			_physicalTorso.velocity = Vector3.zero;
 			transform.position = initPos + Vector3.up * 2;
 			transform.rotation = initRot;
 			AnimatedTorso.position = initPos + Vector3.up * 2;
 			AnimatedTorso.rotation = initRot;
 			PhysicalTorso.position = initPos + Vector3.up * 2;
 			PhysicalTorso.rotation = initRot;
+			transform.position = initPos + Vector3.up * 2;
+			transform.rotation = initRot;
+			_physicalTorso.velocity = Vector3.zero;
 		}
         private void GetDefaultBodyParts() {
             _bodyParts.Add(new BodyPart("Head Neck",
