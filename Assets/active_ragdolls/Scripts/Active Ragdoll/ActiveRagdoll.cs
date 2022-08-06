@@ -146,8 +146,18 @@ namespace ActiveRagdoll {
 
 			initPos = _animatedTorso.position;
 			initRot = _animatedTorso.rotation;
+			ResetStatus();
 		}
 
+		public void ResetStatus()
+		{
+			transform.position = initPos + Vector3.up;
+			transform.rotation = initRot;
+			AnimatedTorso.position = initPos + Vector3.up;
+			AnimatedTorso.rotation = initRot;
+			PhysicalTorso.position = initPos + Vector3.up;
+			PhysicalTorso.rotation = initRot;
+		}
         private void GetDefaultBodyParts() {
             _bodyParts.Add(new BodyPart("Head Neck",
                 TryGetJoints(HumanBodyBones.Head, HumanBodyBones.Neck)));

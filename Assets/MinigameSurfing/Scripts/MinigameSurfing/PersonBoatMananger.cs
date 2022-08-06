@@ -64,29 +64,20 @@ public class PersonBoatMananger : MonoBehaviour
 				_activeRagdoll.AnimationModule.SetRigidbodyIsKe(false);
 				_boatController.SetIsMotoring(false);
 				_activeRagdoll.CameraModule.PrepareCamera();
+				ResetPosAndRotOfPlayerAndBoat();
 				break;
 			case PersonBoatStatus.PersonSurfing:
 				_activeRagdoll.AnimationModule.SetRigidbodyIsKe(true);
 				_boatController.SetIsMotoring(true);
 				_activeRagdoll.CameraModule.PrepareCamera();
-				ResetPosAndRotOfPlayerAndBoat();
 				break;
 		}
 	}
 
 	private void ResetPosAndRotOfPlayerAndBoat()
 	{
-		_activeRagdoll.AnimatedTorso.position = _activeRagdoll.initPos;
-		_activeRagdoll.AnimatedTorso.rotation = _activeRagdoll.initRot;
-		_activeRagdoll.transform.position = _activeRagdoll.initPos;
-		_activeRagdoll.transform.rotation = _activeRagdoll.initRot;
-		_activeRagdoll.PhysicalTorso.position = _activeRagdoll.initPos;
-		_activeRagdoll.PhysicalTorso.rotation = _activeRagdoll.initRot;
-		_boatController.Rigidbody.isKinematic = true;
-		_boatController.Rigidbody.isKinematic = false;
-		_boatController.Rigidbody.velocity = Vector3.zero;
-		_boatController.transform.position = _boatController.initPos;
-		_boatController.transform.rotation = _boatController.initRot;
+		_activeRagdoll.ResetStatus();
+		_boatController.ResetStatus();
 	}
 
 	private void LateUpdate()

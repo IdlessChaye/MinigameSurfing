@@ -45,20 +45,26 @@ public class BoatController : MonoBehaviour
 	private void Awake()
 	{
 		_instance = this;
+		m_transform = transform;
+		m_rigidbody = GetComponent<Rigidbody>();
+		_buoyancy = GetComponent<Buoyancy>();
+
+		accelBreak = m_FinalSpeed * 0.3f;
 
 		initPos = transform.position;
 		initRot = transform.rotation;
+		ResetStatus();
 	}
 
-	void Start()
+	public void ResetStatus()
 	{
-		m_transform = transform;
-		m_rigidbody = GetComponent<Rigidbody>();
-		
-		accelBreak = m_FinalSpeed * 0.3f;
-
-		_buoyancy = GetComponent<Buoyancy>();
+		m_rigidbody.isKinematic = true;
+		m_rigidbody.isKinematic = false;
+		m_rigidbody.velocity = Vector3.zero;
+		m_transform.position = initPos + Vector3.up;
+		m_transform.rotation = initRot;
 	}
+	
 
 	void Update()
 	{
