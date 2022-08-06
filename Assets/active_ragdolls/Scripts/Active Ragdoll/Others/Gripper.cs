@@ -66,6 +66,9 @@ namespace ActiveRagdoll {
 			IsHoldBoat = false;
 			enabled = false;
 
+			var rig = GetComponent<Rigidbody>();
+			if (rig != null)
+				Destroy(rig);
 		}
 
         private void OnCollisionEnter(Collision collision) {
