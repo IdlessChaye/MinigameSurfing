@@ -37,6 +37,12 @@ public class PersonBoatMananger : MonoBehaviour
 			else if (_personBoatStatus == PersonBoatStatus.PersonSurfing)
 			{
 				SetPersonBoatStatus(PersonBoatStatus.PersonWalk);
+				SetPersonBoatStatus(PersonBoatStatus.PersonSurfing);
+				SetPersonBoatStatus(PersonBoatStatus.PersonWalk);
+				SetPersonBoatStatus(PersonBoatStatus.PersonSurfing);
+				SetPersonBoatStatus(PersonBoatStatus.PersonWalk);
+				SetPersonBoatStatus(PersonBoatStatus.PersonSurfing);
+				SetPersonBoatStatus(PersonBoatStatus.PersonWalk);
 			}
 		}
 
