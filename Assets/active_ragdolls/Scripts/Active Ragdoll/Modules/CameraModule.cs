@@ -22,7 +22,6 @@ namespace ActiveRagdoll {
 		private Vector2 _cameraRotation;
         private Vector2 _inputDelta;
 
-
         [Header("--- SMOOTHING ---")]
         public float smoothSpeed = 20;
         public bool smooth = true;
@@ -57,7 +56,45 @@ namespace ActiveRagdoll {
         [Tooltip("How far to reposition the camera from an obstacle.")]
         public float cameraRepositionOffset = 0.15f;
 
-        private void OnValidate() {
+
+		public Transform targetTF { get; set; }
+		private SphericalVector sphericalVector = new SphericalVector(5f, 1f, 0.3f);
+		private float viewMoveSpeed;
+		private Transform _cam_transform;
+
+		public void Init()
+		{
+			SetLookPoint();
+			targetTF = _lookPoint;
+			viewMoveSpeed = 0.03f;
+			_cam_transform = Camera.transform;
+		}
+
+		public void Look()  // このカメラ切り替えはFixedUpdate()内でないと正常に動かない
+		{
+			if (targetTF == null)
+				return;
+
+			float h = _inputDelta.x;//水平视角移动
+			float v = _inputDelta.y;//垂直视角移动
+			sphericalVector.azimuth += h * viewMoveSpeed;
+			sphericalVector.zenith -= v * viewMoveSpeed;
+			sphericalVector.zenith = Mathf.Clamp(sphericalVector.zenith, 0f, 1f);
+			sphericalVector.length = _currentDistance;
+			Vector3 destTargetPosition = targetTF.position + Vector3.up * 0.5f;
+			Vector3 destCameraPosition = destTargetPosition + sphericalVector.Position;//设定摄像机位置
+																					   //transform.position = Vector3.Lerp(transform.position,destCameraPosition,Time.fixedDeltaTime * smooth);
+			_cam_transform.position = destCameraPosition;
+			_cam_transform.forward = GetLookAtVector3(_cam_transform.position, destTargetPosition); //设定摄像机朝向
+		}
+
+		Vector3 GetLookAtVector3(Vector3 oriPosition, Vector3 destPosition)
+		{
+			Vector3 offsetPosition = destPosition - oriPosition;
+			return offsetPosition;
+		}
+
+		private void OnValidate() {
 			SetLookPoint();
 		}
 
@@ -83,10 +120,14 @@ namespace ActiveRagdoll {
 			_smoothedLookPoint = _lookPoint.position;
 			_currentDistance = initialDistance;
 
-			_startDirection = _lookPoint.forward;
+			_startDirection = Vector3.forward;
+
+			Init();
 		}
 
         void Update() {
+			Look();
+			return;
             UpdateCameraInput();
             UpdateCameraPosRot();
             AvoidObstacles();
@@ -130,8 +171,6 @@ namespace ActiveRagdoll {
             }
         }
 
-
-
         // ------------- Input Handlers -------------
 
         public void OnLook(InputValue value) {
@@ -144,4 +183,39 @@ namespace ActiveRagdoll {
                                     minDistance, maxDistance);
         }
     }
+
+	public struct SphericalVector
+	{
+		public float length;
+		public float azimuth;
+		public float zenith;
+
+		public SphericalVector(float l, float a, float z)
+		{
+			this.length = l;
+			this.azimuth = a;
+			this.zenith = z;
+		}
+
+		public Vector3 Position
+		{
+			get
+			{
+				return length * Direction;
+			}
+		}
+		public Vector3 Direction
+		{
+			get
+			{
+				float z = zenith * Mathf.PI / 2;
+				float a = azimuth * Mathf.PI;
+				Vector3 ret = Vector3.zero;
+				ret.y = Mathf.Sin(z);
+				ret.x = Mathf.Cos(z) * Mathf.Sin(a);
+				ret.z = Mathf.Cos(z) * Mathf.Cos(a);
+				return ret;
+			}
+		}
+	}
 } // namespace ActiveRagdoll
