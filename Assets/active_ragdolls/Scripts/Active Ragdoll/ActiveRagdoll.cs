@@ -144,25 +144,18 @@ namespace ActiveRagdoll {
 				_playerAnimator = _physicalAnimator;
 			}
 
-			initPos = _animatedTorso.position;
-			initRot = _animatedTorso.rotation;
+			initPos = PhysicalTorso.position;
+			initRot = PhysicalTorso.rotation;
 			ResetStatus();
 		}
 
 		public void ResetStatus()
 		{
-			_physicalTorso.velocity = Vector3.zero;
-			transform.position = initPos + Vector3.up * 3;
-			transform.rotation = initRot;
-			AnimatedTorso.position = initPos + Vector3.up * 3;
-			AnimatedTorso.rotation = initRot;
-			PhysicalTorso.position = initPos + Vector3.up * 3;
+			PhysicalTorso.position = initPos + Vector3.up * 1;
 			PhysicalTorso.rotation = initRot;
-			transform.position = initPos + Vector3.up * 3;
-			transform.rotation = initRot;
-			_physicalTorso.velocity = Vector3.zero;
-			_physicalTorso.isKinematic = true;
-			_physicalTorso.isKinematic = false;
+			var rigs = _physicalTorso.GetComponents<Rigidbody>();
+			foreach (var rig in rigs)
+				rig.velocity = Vector3.zero;
 		}
         private void GetDefaultBodyParts() {
             _bodyParts.Add(new BodyPart("Head Neck",

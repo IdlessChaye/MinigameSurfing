@@ -19,15 +19,24 @@ public class PersonBoatMananger : MonoBehaviour
 	{
 		_instance = this;
 	}
-
+	private Rigidbody _physicalTorso;
 	private void Start()
 	{
 		_boatController = BoatController.Instance;
 		_activeRagdoll = ActiveRagdoll.ActiveRagdoll.Instance;
+		_physicalTorso = _activeRagdoll.PhysicalTorso.GetComponent<Rigidbody>();
 	}
 
 	private void Update()
 	{
+		if (Input.GetKeyDown(KeyCode.W))
+		{
+			if (_physicalTorso.isKinematic == true && _personBoatStatus == PersonBoatStatus.PersonWalk)
+			{
+				_activeRagdoll.AnimationModule.SetRigidbodyIsKe(false);
+			}
+		}
+
 		if (Input.GetKeyDown(KeyCode.G))
 		{
 			if (_personBoatStatus == PersonBoatStatus.PersonWalk)
@@ -36,12 +45,6 @@ public class PersonBoatMananger : MonoBehaviour
 			}
 			else if (_personBoatStatus == PersonBoatStatus.PersonSurfing)
 			{
-				SetPersonBoatStatus(PersonBoatStatus.PersonWalk);
-				SetPersonBoatStatus(PersonBoatStatus.PersonSurfing);
-				SetPersonBoatStatus(PersonBoatStatus.PersonWalk);
-				SetPersonBoatStatus(PersonBoatStatus.PersonSurfing);
-				SetPersonBoatStatus(PersonBoatStatus.PersonWalk);
-				SetPersonBoatStatus(PersonBoatStatus.PersonSurfing);
 				SetPersonBoatStatus(PersonBoatStatus.PersonWalk);
 			}
 		}
@@ -67,7 +70,8 @@ public class PersonBoatMananger : MonoBehaviour
 		switch (_personBoatStatus)
 		{
 			case PersonBoatStatus.PersonWalk:
-				_activeRagdoll.AnimationModule.SetRigidbodyIsKe(false);
+				_activeRagdoll.AnimationModule.SetRigidbodyIsKe(true);
+				NoMono.FullCoroutineManager.Instance.AddCoroutine(1f, () => _activeRagdoll.AnimationModule.SetRigidbodyIsKe(false));
 				_boatController.SetIsMotoring(false);
 				_activeRagdoll.CameraModule.PrepareCamera();
 				ResetPosAndRotOfPlayerAndBoat();
