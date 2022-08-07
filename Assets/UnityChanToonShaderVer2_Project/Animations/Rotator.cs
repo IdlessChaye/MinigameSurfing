@@ -1,18 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Rotator : MonoBehaviour {
+namespace UnityChan
+{
 
-    private Vector3 pivot = Vector3.zero;
-    public float speed = 20.0f;
+	public class Rotator : MonoBehaviour
+	{
 
-	// Use this for initialization
-	void Awake () {
-        pivot = transform.position;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        transform.RotateAround(pivot, Vector3.up, speed * Time.deltaTime);
+		private Vector3 pivot = Vector3.zero;
+		public float speed = 20.0f;
+
+		// Use this for initialization
+		void Awake()
+		{
+			pivot = transform.position;
+		}
+
+		// Update is called once per frame
+		void Update()
+		{
+			transform.RotateAround(pivot, Vector3.up, speed * Time.deltaTime);
+		}
 	}
 }
