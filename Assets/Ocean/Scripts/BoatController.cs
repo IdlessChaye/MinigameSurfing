@@ -19,6 +19,8 @@ public class BoatController : MonoBehaviour
 	[SerializeField] private float m_Force = 1F;
 
 	public Transform boatPlayerPlaceTransform;
+	public Transform boatPlayerLeftLegTransform;
+	public Transform boatPlayerRightLegTransform;
 
 	public bool isMotoring { get { return _isMotoring; } }
 

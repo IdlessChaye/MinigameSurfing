@@ -81,7 +81,7 @@ namespace ActiveRagdoll {
             }
         }
 
-        void Update() {
+        void FixedUpdate() {
             UpdateJointTargets();
             UpdateIK();
         }
@@ -140,16 +140,26 @@ namespace ActiveRagdoll {
 			if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonWalk)
 			{
 				UpdateArmsIK();
+				_animatorHelper.LeftLegIKWeight = 0;
+				_animatorHelper.RightLegIKWeight = 0;
+				//_animatorHelper.LeftLegIKWeight = 1;
+				//_animatorHelper.RightLegIKWeight = 1;
+				//UpdateFootIK();
 			}
-			else if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonWalk)
+			else if (PersonBoatMananger.Instance.PersonBoatStatus == PersonBoatStatus.PersonSurfing)
 			{
 				UpdateArmsIK();
+				//_animatorHelper.LeftLegIKWeight = 1;
+				//_animatorHelper.RightLegIKWeight = 1;
+				//UpdateFootIK();
 			}
 		}
 
-        /// <summary> Reflect the direction when looking backwards, avoids neck-breaking twists </summary>
-        /// <param name=""></param>
-        private void ReflectBackwards() {
+
+
+		/// <summary> Reflect the direction when looking backwards, avoids neck-breaking twists </summary>
+		/// <param name=""></param>
+		private void ReflectBackwards() {
             bool lookingBackwards = Vector3.Angle(AimDirection, _animatedTorso.forward) > 90;
             if (lookingBackwards) AimDirection = Vector3.Reflect(AimDirection, _animatedTorso.forward);
         }
@@ -171,7 +181,17 @@ namespace ActiveRagdoll {
             _animatorHelper.LookAtPoint(lookPoint);
         }
 
-        private void UpdateArmsIK() {
+
+		private void UpdateFootIK()
+		{
+			_animatorHelper.LeftFootTarget.position = BoatController.Instance.boatPlayerLeftLegTransform.position;
+			_animatorHelper.LeftFootTarget.rotation = BoatController.Instance.boatPlayerLeftLegTransform.rotation;
+			_animatorHelper.RightFootTarget.position = BoatController.Instance.boatPlayerRightLegTransform.position;
+			_animatorHelper.RightFootTarget.rotation = BoatController.Instance.boatPlayerRightLegTransform.rotation;
+		}
+
+
+		private void UpdateArmsIK() {
             float armsVerticalAngle = _targetDirVerticalPercent * Mathf.Abs(maxArmsAngle - minArmsAngle) + minArmsAngle;
             armsVerticalAngle += armsAngleOffset;
             _armsDir = Quaternion.AngleAxis(-armsVerticalAngle, _animatedTorso.right) * _targetDir2D;

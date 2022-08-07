@@ -1,5 +1,7 @@
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Mobile/Ocean" {
 	Properties {
 	    _SurfaceColor ("SurfaceColor", Color) = (1,1,1,1)
@@ -236,7 +238,25 @@ Shader "Mobile/Ocean" {
 		}
 
 		
+		Pass
+        {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Front
+            CGPROGRAM            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
 
+
+            float4 vert(float4 vertPos : POSITION) : SV_POSITION
+            {                return UnityObjectToClipPos(vertPos);
+            }
+
+            float4 frag(float4 vertPos : SV_POSITION) : COLOR
+            {                return float4(97.0/255.0,144.0/255.0,185.0/255.0,1.0);
+            }
+            ENDCG
+        }
 
 
     }
@@ -412,6 +432,25 @@ Shader "Mobile/Ocean" {
 
 			ENDCG
 		}
+		Pass
+        {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Front
+            CGPROGRAM            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
+
+
+            float4 vert(float4 vertPos : POSITION) : SV_POSITION
+            {                return UnityObjectToClipPos(vertPos);
+            }
+
+            float4 frag(float4 vertPos : SV_POSITION) : COLOR
+            {                return float4(97.0/255.0,144.0/255.0,185.0/255.0,1.0);
+            }
+            ENDCG
+        }
     }
 
 
@@ -586,6 +625,25 @@ Shader "Mobile/Ocean" {
 
 			ENDCG
 		}
+		Pass
+        {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Front
+            CGPROGRAM            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
+
+
+            float4 vert(float4 vertPos : POSITION) : SV_POSITION
+            {                return UnityObjectToClipPos(vertPos);
+            }
+
+            float4 frag(float4 vertPos : SV_POSITION) : COLOR
+            {                return float4(97.0/255.0,144.0/255.0,185.0/255.0,1.0);
+            }
+            ENDCG
+        }
     }
 
 	//water bump/foam bump/double foam/reflection/refraction
@@ -768,6 +826,26 @@ Shader "Mobile/Ocean" {
 
 			ENDCG
 		}
+
+		Pass
+        {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Front
+            CGPROGRAM            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
+
+
+            float4 vert(float4 vertPos : POSITION) : SV_POSITION
+            {                return UnityObjectToClipPos(vertPos);
+            }
+
+            float4 frag(float4 vertPos : SV_POSITION) : COLOR
+            {                return float4(97.0/255.0,144.0/255.0,185.0/255.0,1.0);
+            }
+            ENDCG
+        }
     }
 		
 	//water bump/foam/reflection/refraction
@@ -945,6 +1023,26 @@ Shader "Mobile/Ocean" {
 
 			ENDCG
 		}
+
+		Pass
+        {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Front
+            CGPROGRAM            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
+
+
+            float4 vert(float4 vertPos : POSITION) : SV_POSITION
+            {                return UnityObjectToClipPos(vertPos);
+            }
+
+            float4 frag(float4 vertPos : SV_POSITION) : COLOR
+            {                return float4(97.0/255.0,144.0/255.0,185.0/255.0,1.0);
+            }
+            ENDCG
+        }
     }
 		
 
@@ -1100,6 +1198,25 @@ Shader "Mobile/Ocean" {
 			
 
 		}
+		Pass
+        {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Front
+            CGPROGRAM            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
+
+
+            float4 vert(float4 vertPos : POSITION) : SV_POSITION
+            {                return UnityObjectToClipPos(vertPos);
+            }
+
+            float4 frag(float4 vertPos : SV_POSITION) : COLOR
+            {                return float4(97.0/255.0,144.0/255.0,185.0/255.0,1.0);
+            }
+            ENDCG
+        }
     }
  
 	//water bump
@@ -1208,6 +1325,25 @@ Shader "Mobile/Ocean" {
 			
 
 		}
+		Pass
+        {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Front
+            CGPROGRAM            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
+
+
+            float4 vert(float4 vertPos : POSITION) : SV_POSITION
+            {                return UnityObjectToClipPos(vertPos);
+            }
+
+            float4 frag(float4 vertPos : SV_POSITION) : COLOR
+            {                return float4(97.0/255.0,144.0/255.0,185.0/255.0,1.0);
+            }
+            ENDCG
+        }
     }
 
 
@@ -1365,6 +1501,25 @@ Shader "Mobile/Ocean" {
 			ENDCG
 
 		}
+		Pass
+        {
+            Blend SrcAlpha OneMinusSrcAlpha
+            ZWrite Off
+            Cull Front
+            CGPROGRAM            #pragma vertex vert
+            #pragma fragment frag
+            #include "UnityCG.cginc"
+
+
+            float4 vert(float4 vertPos : POSITION) : SV_POSITION
+            {                return UnityObjectToClipPos(vertPos);
+            }
+
+            float4 frag(float4 vertPos : SV_POSITION) : COLOR
+            {                return float4(97.0/255.0,144.0/255.0,185.0/255.0,1.0);
+            }
+            ENDCG
+        }
     }
 
 		   
