@@ -1410,7 +1410,7 @@ public class Ocean : MonoBehaviour {
         #if UNITY_2017_OR_NEWER
 		Camera cam = XRDevice.isPresent ?  Camera.main :  Camera.current;
         #else
-        Camera cam = Camera.current;
+        Camera cam = Camera.main;
         #endif
         if ( !cam ) return;
 
@@ -1423,9 +1423,9 @@ public class Ocean : MonoBehaviour {
 
 		UpdateCameraModes( cam, reflectionCamera );
 		UpdateCameraModes( cam, refractionCamera );
-
+		
 		//a hack for now
-		if(reflectivity<1f) {
+		if (reflectivity<1f) {
 			RenderSettings.fogMode = FogMode.Linear;
 			RenderSettings.fog = true;
 			RenderSettings.fogColor = surfaceColor*0.5f;
@@ -1458,7 +1458,14 @@ public class Ocean : MonoBehaviour {
 			reflectionCamera.transform.position = newpos;
 			Vector3 euler = cam.transform.eulerAngles;
 			reflectionCamera.transform.eulerAngles = new Vector3(-euler.x, euler.y, euler.z);
-			reflectionCamera.Render();
+			try
+			{ 
+				reflectionCamera.Render();
+			}
+			catch(Exception ex)
+			{
+				Debug.LogError(ex);
+			}
 			reflectionCamera.transform.position = oldpos;
             GL.invertCulling = false;
             if(material!=null) material.SetTexture( "_Reflection", m_ReflectionTexture );

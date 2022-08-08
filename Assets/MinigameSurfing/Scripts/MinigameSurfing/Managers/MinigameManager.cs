@@ -19,8 +19,8 @@ public class MinigameManager : MonoBehaviour
 	private void Start()
 	{
 		Debug.Log("Sta");
-		//StartAVGEngineOnce(Const.avgScriptTutorial);
-		StartAVGEngineOnce(Const.avgScriptName);
+		StartAVGEngineOnce(Const.avgScriptTutorial);
+		//StartAVGEngineOnce(Const.avgScriptName);
 	}
 
 	private void AwakeSettings()

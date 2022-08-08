@@ -20,9 +20,9 @@ public static class Const
 	public static string Scene_MainMenu = "MainMenu";
 	public static string Scene_Main = "Main";
 
-	public static string avgScriptTutorial = "tutorial";
-	public static string avgScriptTuoru = "tuoru";
-	public static string avgScriptChonglang = "chonglang";
+	public static string avgScriptTutorial = "tutorials";
+	public static string avgScriptTuoru = "tuorus";
+	public static string avgScriptChonglang = "chonglangs";
 	public static List<string> markList = new List<string>();
 	public static bool HasMark(string mark)
 	{
