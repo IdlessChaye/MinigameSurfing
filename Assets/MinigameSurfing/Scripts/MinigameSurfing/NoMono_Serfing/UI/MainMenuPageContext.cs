@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using NoMono;
+using IdlessChaye.IdleToolkit.AVGEngine;
 
 public class MainMenuPageContext : BasePageContext
 {
@@ -19,19 +20,19 @@ public class MainMenuPageContext : BasePageContext
 		needTick = true;
 
 		_mainMenuPageContext = this;
-
-		Debug.Log("UI Works");
 	}
 
 	public override void Setup()
 	{
-		Debug.Log("UI Works");
+
 	}
 
 	protected override void SetupCallbacks()
 	{
 		//BindCallback(_mono.startButton, () => UnityEngine.SceneManagement.SceneManager.LoadScene("MainLevel"));
-		BindCallback(_mono.startButton, () => UnityEngine.SceneManagement.SceneManager.LoadScene(Const.Scene_Main));
+		//BindCallback(_mono.startButton, () => UnityEngine.SceneManagement.SceneManager.LoadScene(Const.Scene_Main));
+
+		BindCallback(_mono.startButton, () => PachiGrimoire.I.StartAVGEngine(Const.avgScriptName));
 	}
 
 
