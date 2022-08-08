@@ -15,4 +15,8 @@ public static class Const
 	public static string AniNamSurfingRight = "SurfingRight";
 
 	public static string TagGrippable = "Grippable";
+
+
+	public static string Scene_MainMenu = "MainMenu";
+	public static string Scene_Main = "Main";
 }
