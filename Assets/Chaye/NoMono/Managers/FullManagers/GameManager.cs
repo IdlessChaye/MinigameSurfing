@@ -196,7 +196,14 @@ namespace NoMono
 				manager = node.Value;
 				if (manager != null)
 				{
-					manager.OnLevelUnLoaded(scene);
+					try
+					{ 
+						manager.OnLevelUnLoaded(scene);
+					}
+					catch (System.Exception ex)
+					{
+						Debug.LogError(ex);
+					}
 				}
 				node = node.Previous;
 			}
@@ -242,7 +249,9 @@ namespace NoMono
 			isDirtyAdd = true;
 			manager.Init();
 			if (!_toBeAddedLocalList.Contains(manager))
+			{
 				_toBeAddedLocalList.Add(manager);
+			}
 		}
 
 		public override void Destroy() // Destroy 模拟 OnSceneUnloaded
