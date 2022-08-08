@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/LiaoZhaiRL/Animation/Characters/Enemy/Yaksha/Yaksha.controller.meta
+guid: ae135e38a8480524f82eaf7be64eb206
+========
+guid: a8ba71663af4f474585919e24ddc9f75
+>>>>>>>> dev:Assets/LiaoZhaiRL/UI/Animators/Contexts/PageContexts/Animations/SwordStatus/SwordStatusHide.anim.meta
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

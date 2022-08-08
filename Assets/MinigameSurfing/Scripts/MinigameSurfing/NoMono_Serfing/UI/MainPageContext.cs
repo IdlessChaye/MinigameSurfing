@@ -18,13 +18,10 @@ public class MainPageContext : BasePageContext
 		needTick = true;
 
 		_mainPageContext = this;
-
-		Debug.Log("UI Works");
 	}
 
 	public override void Setup()
 	{
-		Debug.Log("UI Works");
 	}
 
 	protected override void SetupCallbacks()

@@ -33,7 +33,6 @@ public class MainMenuPageContext : BasePageContext
 
 		BindCallback(_mono.startButton, () => UnityEngine.SceneManagement.SceneManager.LoadScene(Const.Scene_Main));
 		BindCallback(_mono.demoButton, () => PachiGrimoire.I.StartAVGEngine(Const.avgScriptName));
-
 	}
 
 

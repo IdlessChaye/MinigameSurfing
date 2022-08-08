@@ -1,0 +1,602 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f6720cf24e604749a44aff9d3b9eb71, type: 3}
+  m_Name: "\u88AB\u52A8\u6280\u80FD\u6C60"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  poolElements:
+  - elemType: 1
+    icon: {fileID: 21300000, guid: 55b5f7237423a88408ca64131b6e8e08, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 20001
+    passiveSkill: {fileID: 11400000, guid: 7bf1d688a1873a14fb7b78ea0991b065, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: -1
+  - elemType: 2
+    icon: {fileID: 21300000, guid: d7c3f6f24fad98349be27da8c8041228, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 20002
+    passiveSkill: {fileID: 11400000, guid: 0c0749efadbf237479f0eb1b0adcbaa5, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: -1
+  - elemType: 3
+    icon: {fileID: 21300000, guid: 8096f6babdca2604ead635f22b630a33, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 20003
+    passiveSkill: {fileID: 11400000, guid: 5be2d61b3fe355f46af0e596516bdf07, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: -1
+  - elemType: 4
+    icon: {fileID: 21300000, guid: 83f6654d03af79645ba97a1e7386b190, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 20004
+    passiveSkill: {fileID: 11400000, guid: ec5a05e410bff28478dfa9b63fd1ff6f, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: -1
+  - elemType: 5
+    icon: {fileID: 21300000, guid: d7c3f6f24fad98349be27da8c8041228, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 20005
+    passiveSkill: {fileID: 11400000, guid: 55213ee70c137744fac1dd464c383b6a, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: -1
+  - elemType: 1
+    icon: {fileID: 21300000, guid: f8564101f7bca2d4c8791d80b4e259fe, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 20001
+    passiveSkill: {fileID: 11400000, guid: 957db94a4b732504da18f633b36c8304, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 2
+    icon: {fileID: 21300000, guid: d7c3f6f24fad98349be27da8c8041228, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 21002
+    passiveSkill: {fileID: 11400000, guid: 98062f9542af89a4d86cd00a183818ad, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 3
+    icon: {fileID: 21300000, guid: 8096f6babdca2604ead635f22b630a33, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 21003
+    passiveSkill: {fileID: 11400000, guid: 0fecf21c3b4fe4b4d8349ac61504cb67, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 4
+    icon: {fileID: 21300000, guid: 83f6654d03af79645ba97a1e7386b190, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 21004
+    passiveSkill: {fileID: 11400000, guid: 035f8db5bfe55f24dac3a6041bd455d0, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 5
+    icon: {fileID: 21300000, guid: 55b5f7237423a88408ca64131b6e8e08, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 21005
+    passiveSkill: {fileID: 11400000, guid: d50e98911b85a1e4ea1e50094cdf9131, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 1
+    icon: {fileID: 21300000, guid: f8564101f7bca2d4c8791d80b4e259fe, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 22001
+    passiveSkill: {fileID: 11400000, guid: 89f620bb18e372f4ab1a3001e0b662b7, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 2
+    icon: {fileID: 21300000, guid: d7c3f6f24fad98349be27da8c8041228, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 22002
+    passiveSkill: {fileID: 11400000, guid: 812509c5c7fbea949b129a8f0d519d32, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 3
+    icon: {fileID: 21300000, guid: 8096f6babdca2604ead635f22b630a33, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 22003
+    passiveSkill: {fileID: 11400000, guid: bb80cb16d57515a4fb8c248ef0566ea9, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 4
+    icon: {fileID: 21300000, guid: 83f6654d03af79645ba97a1e7386b190, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 22004
+    passiveSkill: {fileID: 11400000, guid: 759150f776555e24b9be9963f239f5fb, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 5
+    icon: {fileID: 21300000, guid: 55b5f7237423a88408ca64131b6e8e08, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 22005
+    passiveSkill: {fileID: 11400000, guid: c86dc9d4ee5e7ed44921df7e0467c4c2, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 1
+    icon: {fileID: 21300000, guid: f8564101f7bca2d4c8791d80b4e259fe, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 23001
+    passiveSkill: {fileID: 11400000, guid: 13c33d0a12244d94c904edd8aa7510a2, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 2
+    icon: {fileID: 21300000, guid: d7c3f6f24fad98349be27da8c8041228, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 23002
+    passiveSkill: {fileID: 11400000, guid: 5eb4e2ab4889ca7479311b89009ce291, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 3
+    icon: {fileID: 21300000, guid: 8096f6babdca2604ead635f22b630a33, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 23003
+    passiveSkill: {fileID: 11400000, guid: ca087ec59125e324096c2a81c699040e, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 4
+    icon: {fileID: 21300000, guid: 83f6654d03af79645ba97a1e7386b190, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 23004
+    passiveSkill: {fileID: 11400000, guid: 6216b067d71c20141887084739441eb5, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 5
+    icon: {fileID: 21300000, guid: 55b5f7237423a88408ca64131b6e8e08, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 23005
+    passiveSkill: {fileID: 11400000, guid: 2cdc0c45eada6f74084fe1c346770f85, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 1
+    icon: {fileID: 21300000, guid: f8564101f7bca2d4c8791d80b4e259fe, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 24001
+    passiveSkill: {fileID: 11400000, guid: ff1c9d415ae73c841b45faab34e7567d, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 2
+    icon: {fileID: 21300000, guid: d7c3f6f24fad98349be27da8c8041228, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 24002
+    passiveSkill: {fileID: 11400000, guid: d0fb3cae74c720445b454f631ad282c3, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 3
+    icon: {fileID: 21300000, guid: 8096f6babdca2604ead635f22b630a33, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 24003
+    passiveSkill: {fileID: 11400000, guid: 523af82466dbb21419af2551ab0c87e6, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 4
+    icon: {fileID: 21300000, guid: 83f6654d03af79645ba97a1e7386b190, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 24004
+    passiveSkill: {fileID: 11400000, guid: b0321f13fa4a4fa4c8f21291c889aca4, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 5
+    icon: {fileID: 21300000, guid: 55b5f7237423a88408ca64131b6e8e08, type: 3}
+    isMultiRare: 0
+    passiveSkillId: 24005
+    passiveSkill: {fileID: 11400000, guid: e0f1508c9d4b61640a3b94dea063de43, type: 2}
+    multiObjects:
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.75
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.2
+    - passiveSkillID: 
+      passiveSkill: {fileID: 0}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 1
+    icon: {fileID: 21300000, guid: f8564101f7bca2d4c8791d80b4e259fe, type: 3}
+    isMultiRare: 1
+    passiveSkillId: 
+    passiveSkill: {fileID: 0}
+    multiObjects:
+    - passiveSkillID: 250011
+      passiveSkill: {fileID: 11400000, guid: 52a7d3bf5b843a4409afddeae5626cca, type: 2}
+      possibility: 0.75
+    - passiveSkillID: 250012
+      passiveSkill: {fileID: 11400000, guid: 1c5c9e607e1dac34e9475a17bda0c2aa, type: 2}
+      possibility: 0.2
+    - passiveSkillID: 250013
+      passiveSkill: {fileID: 11400000, guid: fcc6e787f15afe3449e0b8a73107e2d8, type: 2}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 2
+    icon: {fileID: 21300000, guid: d7c3f6f24fad98349be27da8c8041228, type: 3}
+    isMultiRare: 1
+    passiveSkillId: 
+    passiveSkill: {fileID: 0}
+    multiObjects:
+    - passiveSkillID: 250021
+      passiveSkill: {fileID: 11400000, guid: ed1a90041362a9d4288fb4f6984ca997, type: 2}
+      possibility: 0.75
+    - passiveSkillID: 250022
+      passiveSkill: {fileID: 11400000, guid: be287eeab23b9ca4b812160094ea2cbf, type: 2}
+      possibility: 0.2
+    - passiveSkillID: 250023
+      passiveSkill: {fileID: 11400000, guid: 273f937ebbb85ad49b6badae771609bf, type: 2}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 3
+    icon: {fileID: 21300000, guid: 8096f6babdca2604ead635f22b630a33, type: 3}
+    isMultiRare: 1
+    passiveSkillId: 
+    passiveSkill: {fileID: 0}
+    multiObjects:
+    - passiveSkillID: 250031
+      passiveSkill: {fileID: 11400000, guid: cc2ee1e8bc63d2f40a095ad173f3c8df, type: 2}
+      possibility: 0.75
+    - passiveSkillID: 250032
+      passiveSkill: {fileID: 11400000, guid: be287eeab23b9ca4b812160094ea2cbf, type: 2}
+      possibility: 0.2
+    - passiveSkillID: 250033
+      passiveSkill: {fileID: 11400000, guid: 273f937ebbb85ad49b6badae771609bf, type: 2}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 4
+    icon: {fileID: 21300000, guid: 83f6654d03af79645ba97a1e7386b190, type: 3}
+    isMultiRare: 1
+    passiveSkillId: 
+    passiveSkill: {fileID: 0}
+    multiObjects:
+    - passiveSkillID: 250041
+      passiveSkill: {fileID: 11400000, guid: 6e354fa699de5c2489e9a0cba4e3355a, type: 2}
+      possibility: 0.75
+    - passiveSkillID: 250042
+      passiveSkill: {fileID: 11400000, guid: d17beb9015190804ab80772c26bb3504, type: 2}
+      possibility: 0.2
+    - passiveSkillID: 250043
+      passiveSkill: {fileID: 11400000, guid: dd612544215dd0144b1b96e31dafa508, type: 2}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 5
+    icon: {fileID: 21300000, guid: 55b5f7237423a88408ca64131b6e8e08, type: 3}
+    isMultiRare: 1
+    passiveSkillId: 
+    passiveSkill: {fileID: 0}
+    multiObjects:
+    - passiveSkillID: 250051
+      passiveSkill: {fileID: 11400000, guid: 63a57d56922e62d40abaadd6221ca0a2, type: 2}
+      possibility: 0.75
+    - passiveSkillID: 250052
+      passiveSkill: {fileID: 11400000, guid: 73a40f0fce6e9db49a7063644ec3166f, type: 2}
+      possibility: 0.2
+    - passiveSkillID: 250053
+      passiveSkill: {fileID: 11400000, guid: 319a6a8e987735747913f44bae44421c, type: 2}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 1
+    icon: {fileID: 21300000, guid: f8564101f7bca2d4c8791d80b4e259fe, type: 3}
+    isMultiRare: 1
+    passiveSkillId: 
+    passiveSkill: {fileID: 0}
+    multiObjects:
+    - passiveSkillID: 260011
+      passiveSkill: {fileID: 11400000, guid: d92bf3274c386b34dbe598d3659fb845, type: 2}
+      possibility: 0.75
+    - passiveSkillID: 260012
+      passiveSkill: {fileID: 11400000, guid: 759550d423e032e44901879fbc698b63, type: 2}
+      possibility: 0.2
+    - passiveSkillID: 260013
+      passiveSkill: {fileID: 11400000, guid: ff022550f415fcc468565cbb775cfd83, type: 2}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 2
+    icon: {fileID: 21300000, guid: d7c3f6f24fad98349be27da8c8041228, type: 3}
+    isMultiRare: 1
+    passiveSkillId: 
+    passiveSkill: {fileID: 0}
+    multiObjects:
+    - passiveSkillID: 260021
+      passiveSkill: {fileID: 11400000, guid: c7e66a7b7b8c407459b144276cae38df, type: 2}
+      possibility: 0.75
+    - passiveSkillID: 260022
+      passiveSkill: {fileID: 11400000, guid: 3496487f166acd046b9e4ec3b8d6e67f, type: 2}
+      possibility: 0.2
+    - passiveSkillID: 260023
+      passiveSkill: {fileID: 11400000, guid: 83a975bda7826a24493e9b0534474f38, type: 2}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 3
+    icon: {fileID: 21300000, guid: 8096f6babdca2604ead635f22b630a33, type: 3}
+    isMultiRare: 1
+    passiveSkillId: 
+    passiveSkill: {fileID: 0}
+    multiObjects:
+    - passiveSkillID: 260031
+      passiveSkill: {fileID: 11400000, guid: a623f78f9ee67fa4f95fd99e3db34d59, type: 2}
+      possibility: 0.75
+    - passiveSkillID: 260032
+      passiveSkill: {fileID: 11400000, guid: cea1781c998715344ab06e9cc5c556a8, type: 2}
+      possibility: 0.2
+    - passiveSkillID: 260033
+      passiveSkill: {fileID: 11400000, guid: 8cada9124ad536d4bbb64332075d7ea8, type: 2}
+      possibility: 0.05
+    weight: 1
+    amount: 1
+  - elemType: 4
+    icon: {fileID: 21300000, guid: 83f6654d03af79645ba97a1e7386b190, type: 3}
+    isMultiRare: 1
+    passiveSkillId: 
+    passiveSkill: {fileID: 0}
+    multiObjects:
+    - passiveSkillID: 260041
+      passiveSkill: {fileID: 11400000, guid: 3a98ba61e65ff254183ca1b201e3283e, type: 2}
+      possibility: 0.75
+    - passiveSkillID: 260042
+      passiveSkill: {fileID: 11400000, guid: a74ec0f95a506f34d97290e1cd26600d, type: 2}
+      possibility: 0.2
+    - passiveSkillID: 260043
+      passiveSkill: {fileID: 11400000, guid: 21f81aff19b5dd34fb996e36ccb423f8, type: 2}
+      possibility: 0.05
+    weight: 1
+    amount: 1
