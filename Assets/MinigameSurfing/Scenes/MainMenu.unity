@@ -167,43 +167,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 58088101035758263, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 58088101035758263, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 202924630638854175, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 202924630638854175, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3905310741805779016, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4591280926132501624, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
+    - target: {fileID: 202924630638854175, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4591280926132501624, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
+    - target: {fileID: 202924630638854175, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6743658681272512235, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
-      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7432650675546360550, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
       propertyPath: m_Name
       value: CombatPage
-      objectReference: {fileID: 0}
-    - target: {fileID: 7432650675546360550, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8595444619134757402, guid: 87c6ea1848be4994fb6a71a46648a2bd, type: 3}
       propertyPath: m_Pivot.x
@@ -562,7 +542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2966512004831612751, guid: 2de9013fd2477f448bf9b1958cfdc023, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2701238649375152260, guid: 2de9013fd2477f448bf9b1958cfdc023, type: 3}

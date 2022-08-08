@@ -38,7 +38,11 @@ public class MainMenuPageContext : BasePageContext
 
 	private void QuitGame()
 	{
+#if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+#else
 		Application.Quit();
+#endif
 	}
 
 	protected override void SetupEvents()
