@@ -7,6 +7,8 @@ TagManager:
   - Fire
   - Ocean
   - Grippable
+  - OneNode
+  - CenterNode
   layers:
   - Default
   - TransparentFX
@@ -17,7 +19,7 @@ TagManager:
   - ActiveRagdoll
   - Boids
   - Ground
-  - 
+  - AVGEngine
   - 
   - 
   - 
