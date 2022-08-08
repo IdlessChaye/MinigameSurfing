@@ -30,9 +30,10 @@ public class MainMenuPageContext : BasePageContext
 	protected override void SetupCallbacks()
 	{
 		//BindCallback(_mono.startButton, () => UnityEngine.SceneManagement.SceneManager.LoadScene("MainLevel"));
-		//BindCallback(_mono.startButton, () => UnityEngine.SceneManagement.SceneManager.LoadScene(Const.Scene_Main));
 
-		BindCallback(_mono.startButton, () => PachiGrimoire.I.StartAVGEngine(Const.avgScriptName));
+		BindCallback(_mono.startButton, () => UnityEngine.SceneManagement.SceneManager.LoadScene(Const.Scene_Main));
+		BindCallback(_mono.demoButton, () => PachiGrimoire.I.StartAVGEngine(Const.avgScriptName));
+
 	}
 
 

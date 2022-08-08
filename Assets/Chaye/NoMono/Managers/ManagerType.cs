@@ -11,6 +11,9 @@ namespace NoMono
 		Resource,
 		UI,
 		Entity,
+		Mode,
+		Play,
+		PlayerData,
 		None
 	}
 
@@ -39,6 +42,18 @@ namespace NoMono
 		public override ManagerType managerType { get { return ManagerType.Entity; } }
 	}
 
+	public partial class ModeManager
+	{
+		public override ManagerType managerType { get { return ManagerType.Mode; } }
+	}
 
+	public partial class PlayManager
+	{
+		public override ManagerType managerType { get { return ManagerType.Play; } }
+	}
 
+	public partial class PlayerDataManager
+	{
+		public override ManagerType managerType { get { return ManagerType.PlayerData; } }
+	}
 }

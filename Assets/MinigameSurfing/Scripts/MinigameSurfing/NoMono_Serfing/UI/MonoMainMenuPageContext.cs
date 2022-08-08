@@ -7,4 +7,6 @@ using UnityEngine.UI;
 public class MonoMainMenuPageContext : BaseMonoPageContext
 {
 	public Button startButton;
+
+	public Button demoButton;
 }

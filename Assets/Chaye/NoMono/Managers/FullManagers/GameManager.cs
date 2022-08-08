@@ -34,6 +34,8 @@ namespace NoMono
 		private void AddGlobalManagers()
 		{
 			AddGlobalManager(new ResourceManager());
+			AddGlobalManager(new ModeManager());
+			AddGlobalManager(new PlayerDataManager());
             //AddGlobalManager(new TextMapManager());
             //AddGlobalManager(new InputManager());
         }
@@ -49,8 +51,8 @@ namespace NoMono
 			}
 			else if (sceneName.Equals(Const.Scene_Main))
 			{
-				Debug.Log(sceneName);
 				AddLocalManager(new UIManager());
+				AddLocalManager(new PlayManager());
 			}
 		}
 
