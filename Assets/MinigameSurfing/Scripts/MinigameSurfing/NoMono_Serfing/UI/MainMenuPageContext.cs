@@ -32,9 +32,14 @@ public class MainMenuPageContext : BasePageContext
 		//BindCallback(_mono.startButton, () => UnityEngine.SceneManagement.SceneManager.LoadScene("MainLevel"));
 
 		BindCallback(_mono.startButton, () => UnityEngine.SceneManagement.SceneManager.LoadScene(Const.Scene_Main));
-		BindCallback(_mono.demoButton, () => PachiGrimoire.I.StartAVGEngine(Const.avgScriptName));
+		BindCallback(_mono.demoButton, QuitGame);
 	}
 
+
+	private void QuitGame()
+	{
+		Application.Quit();
+	}
 
 	protected override void SetupEvents()
 	{

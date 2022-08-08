@@ -13,11 +13,10 @@ namespace NoMono
 
 		private float _shield;
 		private float _hp;
-		private float _playerHP = 1000; // Test Code
-		private float _playerMaxHP = 1000; // Test Code
-
-		private float _bossHP = 1000; // Test Code
-		private float _bossMaxHP = 1000; // Test Code
+		private float _playerHP; 
+		private float _playerMaxHP;
+		private float _bossHP;
+		private float _bossMaxHP;
 
 		protected override void Init()
 		{
@@ -69,7 +68,6 @@ namespace NoMono
 			FollowPlayerShield();
 			FollowBossHP();
 			FollowPlayerHP();
-
 		}
 
 		#region Setup
@@ -82,12 +80,12 @@ namespace NoMono
 
 		private void SetupPlayer()
 		{
-			_hp = 1f; //Player.Instance?.combatEntity?.UnitPropertyEntity.HP;
+			_hp = PlayerDataManager.Instance.hp;
 			_mono.hpSlider.minValue = 0;
-			_mono.hpSlider.maxValue = 100f;
-			_playerMaxHP = 100f;
+			_mono.hpSlider.maxValue = PlayerDataManager.Instance.hp_max;
+			_playerMaxHP = PlayerDataManager.Instance.hp_max;
 			_playerHP = _hp;
-			SetupPlayerHP(_hp, 100f);
+			SetupPlayerHP(_hp, _playerMaxHP);
 		}
 
 		private void SetupPlayerHP(float hp, float maxHP)
@@ -109,12 +107,10 @@ namespace NoMono
 			_mono.hpText.text = playerHP.ToString() + " / " + playerMaxHP.ToString();
 		}
 
-
 		private void SetupShield()
 		{
-
-			_shield = 2f;//_unitPropertyEntity?.Shield;
-			SetupPlayerShield(_shield, 200);
+			_shield = PlayerDataManager.Instance.shield;//_unitPropertyEntity?.Shield;
+			SetupPlayerShield(_shield, PlayerDataManager.Instance.shield_max);
 		}
 
 		private void SetupPlayerShield(float shield, float maxShield)
@@ -132,7 +128,8 @@ namespace NoMono
 
 		private void SetupBoss()
 		{
-			// 临时代码 Boss还没文档
+			_bossHP = PlayerDataManager.Instance.boss_hp;
+			_bossMaxHP = PlayerDataManager.Instance.boss_hp_max;
 			Utils.TrySetActive(_mono.bossSlider.gameObject, false);
 			Utils.TrySetActive(_mono.bossTextGO, false);
 		}
@@ -185,8 +182,8 @@ namespace NoMono
 
 		private void FollowPlayerHP()
 		{
-			_hp = 100f;// Player.Instance?.combatEntity?.UnitPropertyEntity.HP;
-			UpdatePlayerHP(_hp, 100f);
+			_hp = PlayerDataManager.Instance.hp;
+			UpdatePlayerHP(_hp, PlayerDataManager.Instance.hp_max);
 			float weight = Mathf.Clamp01(_mono.hpSpeed * Time.deltaTime + _mono.hpFixedWeight);
 			_playerHPFollow = weight * _playerHP + (1 - weight) * _playerHPFollow;
 
@@ -297,13 +294,13 @@ namespace NoMono
 
 		private void OnPickJinLeaf()
         {
-			var amount = 20f;//PlayerMoneyEntity.Instance.GetMoneyAmount(Money.MoneyType.GoldLeaf);
+			var amount = PlayerDataManager.Instance.foodCount;
 			_mono.JinLeaf.text = amount.ToString();
         }
 
 		private void OnPickYinLeaf()
         {
-			var amount = 20f;//PlayerMoneyEntity.Instance.GetMoneyAmount(Money.MoneyType.SilverLeaf);
+			var amount = PlayerDataManager.Instance.woodCount;
 			_mono.YinLeaf.text = amount.ToString();
 		}
 

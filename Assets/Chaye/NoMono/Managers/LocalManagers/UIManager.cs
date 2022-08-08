@@ -30,12 +30,12 @@ namespace NoMono
 			var sceneName = scene.name;
 			if (sceneName.Equals(Const.Scene_MainMenu))
 			{
-				//FullCoroutineManager.Instance.AddCoroutine(0.1f, () => ShowPage(new MainPageContext()));
-				FullCoroutineManager.Instance.AddCoroutine(0.1f, () => ShowPage(new MainMenuPageContext()));
+				ShowPage(new MainMenuPageContext());
 			}
 			else if (sceneName.Equals(Const.Scene_Main))
 			{
-				FullCoroutineManager.Instance.AddCoroutine(0.1f, () => ShowPage(new MainPageContext()));
+				ShowPage(new MainPageContext());
+				ShowPage(new CombatPageContext());
 			}
 
 		}
