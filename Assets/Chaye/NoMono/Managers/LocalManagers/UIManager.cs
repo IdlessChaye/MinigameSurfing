@@ -28,13 +28,14 @@ namespace NoMono
 		private void ShowPages(Scene scene)
 		{
 			var sceneName = scene.name;
-			if (sceneName.Equals("Test"))
+			if (sceneName.Equals(Const.Scene_MainMenu))
 			{
-				//ShowPage(new MainMenuPageContext());
-				//ShowPage(new CombatPageContext());
-				//ShowPage(new CombatTabPageContext());
-				//ShowPage(new SwordSkillPageContext());
-
+				//FullCoroutineManager.Instance.AddCoroutine(0.1f, () => ShowPage(new MainPageContext()));
+				FullCoroutineManager.Instance.AddCoroutine(0.1f, () => ShowPage(new MainMenuPageContext()));
+			}
+			else if (sceneName.Equals(Const.Scene_Main))
+			{
+				FullCoroutineManager.Instance.AddCoroutine(0.1f, () => ShowPage(new MainPageContext()));
 			}
 
 		}
@@ -58,6 +59,17 @@ namespace NoMono
 		}
 
 		public void ShowPage(BasePageContext context)
+		{
+			if (context == null)
+				return;
+			isDirtyAdd = true;
+			context.Load(_pageContextRoot);
+			_toBeAddedContextList.Add(context);
+		}
+
+		public void ShowPage<Page, MonoPage>(BasePageContext<Page, MonoPage> context)
+			where Page : BasePageContext<Page, MonoPage>
+			where MonoPage : BaseMonoPageContext
 		{
 			if (context == null)
 				return;

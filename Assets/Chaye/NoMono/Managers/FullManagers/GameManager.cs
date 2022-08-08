@@ -38,16 +38,18 @@ namespace NoMono
             //AddGlobalManager(new InputManager());
         }
 
-		private int loadSampleTime = 0;
-
-
 		private void AddLocalManagers(Scene scene)
 		{
 			var sceneName = scene.name;
 
-			if (sceneName.Equals("Menu"))
+			if (sceneName.Equals(Const.Scene_MainMenu))
 			{
-				AddLocalManager(new EntityManager());
+				//AddLocalManager(new EntityManager());
+				AddLocalManager(new UIManager());
+			}
+			else if (sceneName.Equals(Const.Scene_Main))
+			{
+				Debug.Log(sceneName);
 				AddLocalManager(new UIManager());
 			}
 		}

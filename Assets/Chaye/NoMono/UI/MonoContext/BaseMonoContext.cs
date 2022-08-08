@@ -30,13 +30,12 @@ namespace NoMono
 
 		public virtual void Show()
 		{
-			animator.SetTrigger("Show");
+			animator?.SetTrigger("Show");
 		}
 
 		public virtual void Hide()
 		{
-			
-			animator.SetTrigger("Hide");
+			animator?.SetTrigger("Hide");
 		}
 	}
 }
