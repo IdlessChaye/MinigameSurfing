@@ -51,8 +51,8 @@ namespace NoMono
 			}
 			else if (sceneName.Equals(Const.Scene_Main))
 			{
-				AddLocalManager(new UIManager());
 				AddLocalManager(new PlayManager());
+				AddLocalManager(new UIManager());
 			}
 		}
 

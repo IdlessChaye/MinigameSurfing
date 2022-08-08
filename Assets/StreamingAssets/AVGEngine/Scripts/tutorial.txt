@@ -1,0 +1,16 @@
+Engine_SystemDebugLog(冲浪！)
+Engine_ChapterNameSet(01.登录海岛)
+//Image_FigureImageAdd(diqiu,*FI_diqiu*,0,100,1,1)
+//WAIT()
+TS(*DL_tutorial_0*,冲浪模拟器)TSEND
+TS(*DL_tutorial_1*,冲浪模拟器)TSEND
+TS(*DL_tutorial_2*,冲浪模拟器)TSEND
+Image_FigureImageAdd(tutorial,*FI_tutorial*,0,100,1,1)
+TS(*DL_tutorial_3*,冲浪模拟器)TSEND
+TS(*DL_tutorial_4*,冲浪模拟器)TSEND
+TS(*DL_tutorial_5*,冲浪模拟器)TSEND
+TS(*DL_tutorial_6*,冲浪模拟器)TSEND
+TS(*DL_tutorial_7*,冲浪模拟器)TSEND
+Image_FigureImageRemove(tutorial)
+WAIT()
+Other_MarkAdd(tutorial)

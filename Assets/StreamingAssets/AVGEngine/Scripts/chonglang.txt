@@ -1,0 +1,11 @@
+//Image_FigureImageAdd(diqiu,*FI_diqiu*,0,100,1,1)
+//WAIT()
+TS(*DL_chonglang_0*,冲浪模拟器)TSEND
+TS(*DL_chonglang_1*,冲浪模拟器)TSEND	
+TS(*DL_chonglang_2*,冲浪模拟器)TSEND
+Image_FigureImageAdd(chonglang,*FI_guiwei*,0,100,1,1)
+TS(*DL_chonglang_3*,冲浪模拟器)TSEND
+TS(*DL_chonglang_4*,冲浪模拟器)TSEND
+Image_FigureImageRemove(chonglang)
+WAIT()
+Other_MarkAdd(chonglang)

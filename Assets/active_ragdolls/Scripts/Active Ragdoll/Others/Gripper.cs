@@ -53,6 +53,7 @@ namespace ActiveRagdoll {
 			if (whatToGrip.GetComponent<BoatController>() != null)
 			{
 				IsHoldBoat = true;
+				MinigameManager.Instance.StartAVGEngineOnce(Const.avgScriptTuoru);
 			}
         }
 

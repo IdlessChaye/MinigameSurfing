@@ -40,6 +40,10 @@ namespace IdlessChaye.IdleToolkit.AVGEngine
 			{
 				node = new OtherKnowledgeAddNode();
 			}
+			if (token.Equals("MarkAdd"))
+			{
+				node = new OtherMarkAddNode();
+			}
 			else
 			{
 				canParse = false;

@@ -54,6 +54,7 @@ public class PersonBoatMananger : MonoBehaviour
 		{
 			_activeRagdoll.GripModule.UnGrip();
 			SetPersonBoatStatus(PersonBoatStatus.PersonSurfing);
+			MinigameManager.Instance.StartAVGEngineOnce(Const.avgScriptChonglang);
 		}
 
 	}

@@ -11,6 +11,8 @@ namespace NoMono
 		public override void Init()
 		{
 			Instance = this;
+
+			Const.markList.Clear();
 		}
 
 		public float shield = 100f;

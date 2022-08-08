@@ -1,0 +1,12 @@
+//Image_FigureImageAdd(diqiu,*FI_diqiu*,0,100,1,1)
+//WAIT()
+TS(*DL_tuoru_0*,冲浪模拟器)TSEND
+TS(*DL_tuoru_0*,冲浪模拟器)TSEND
+TS(*DL_tuoru_0*,冲浪模拟器)TSEND
+TS(*DL_tuoru_0*,冲浪模拟器)TSEND
+Image_FigureImageAdd(tuoru,*FI_surf*,0,100,1,1)
+TS(*DL_tuoru_0*,冲浪模拟器)TSEND
+TS(*DL_tuoru_0*,冲浪模拟器)TSEND
+Image_FigureImageRemove(tuoru)
+WAIT()
+Other_MarkAdd(tuoru)
