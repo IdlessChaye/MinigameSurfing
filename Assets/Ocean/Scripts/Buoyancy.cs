@@ -224,8 +224,17 @@ public class Buoyancy : MonoBehaviour
 
 			if (isSyncWithSea)
 			{
-				float y = ocean.GetHeightChoppyAtLocation2(_transform.position.x, _transform.position.z);
+				float y = 0;
+				try
+				{ 
+					y = ocean.GetWaterHeightAtLocation2(_transform.position.x, _transform.position.z);
+				}
+				catch(System.Exception ex)
+				{
+					Debug.LogError(ex);
+				}
 				_transform.position = new Vector3(_transform.position.x, y, _transform.position.z);
+				return;
 			}
 
 			float yy = ocean.GetHeightChoppyAtLocation2(_transform.position.x, _transform.position.z);

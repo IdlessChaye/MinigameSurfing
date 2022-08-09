@@ -294,12 +294,15 @@ namespace NoMono
 
 		private void OnPickJinLeaf()
         {
+			Debug.Log("OnPickJinLeaf");
 			var amount = PlayerDataManager.Instance.foodCount;
 			_mono.JinLeaf.text = amount.ToString();
         }
 
 		private void OnPickYinLeaf()
         {
+			Debug.Log("OnPickYinLeaf");
+			PlayerDataManager.Instance.woodCount++;
 			var amount = PlayerDataManager.Instance.woodCount;
 			_mono.YinLeaf.text = amount.ToString();
 		}

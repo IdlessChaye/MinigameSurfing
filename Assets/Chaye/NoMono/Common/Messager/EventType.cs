@@ -24,8 +24,8 @@ namespace NoMono
 		Player_SwordUpgradeChanged, // 剑谱升级
 		Player_SwordSkill, // 使用剑谱结算
 
-		Player_PickJinLeaf,
-		Player_PickYinLeaf,
+		Player_PickJinLeaf, // Food
+		Player_PickYinLeaf, // Wood
 
 		Select_UpgradeSlot, // 選擇了升級槽
 

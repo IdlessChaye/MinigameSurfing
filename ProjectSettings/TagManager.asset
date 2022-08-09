@@ -9,6 +9,8 @@ TagManager:
   - Grippable
   - OneNode
   - CenterNode
+  - Wood
+  - Food
   layers:
   - Default
   - TransparentFX

@@ -29,6 +29,10 @@ public static class Const
 		return markList.Contains(mark);
 	}
 
+
+	public static string tagWood = "Wood";
+	public static string tagFood = "Food";
+
 	#region VRStory
 	public static string avgScriptName = "GameStartVRStory";
 	public static string avgScriptName02 = "Scene02";

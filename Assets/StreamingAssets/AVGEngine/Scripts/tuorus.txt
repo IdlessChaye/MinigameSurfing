@@ -4,6 +4,7 @@ TS(*DL_tuoru_1*,冲浪模拟器)TSEND
 TS(*DL_tuoru_2*,冲浪模拟器)TSEND
 TS(*DL_tuoru_3*,冲浪模拟器)TSEND
 Image_FigureImageAdd(tuoru,*FI_surf*,0,100,1,1)
+WAIT()
 TS(*DL_tuoru_4*,冲浪模拟器)TSEND
 TS(*DL_tuoru_5*,冲浪模拟器)TSEND
 Image_FigureImageRemove(tuoru)
