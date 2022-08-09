@@ -11,11 +11,20 @@ namespace NoMono
 		public override void Init()
 		{
 			Instance = this;
+
+			SetNeedTick(true);
 		}
 
 		public override void Setup()
 		{
 			
+		}
+
+		public override void Tick2(float deltaTime)
+		{
+			base.Tick2(deltaTime);
+
+			PlayerDataManager.Instance.ShieldLiushiPerSecond(deltaTime);
 		}
 
 

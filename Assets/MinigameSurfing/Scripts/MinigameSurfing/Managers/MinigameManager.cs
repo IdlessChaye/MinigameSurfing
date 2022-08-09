@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using ActiveRagdoll;
-
+using NoMono;
 public class MinigameManager : MonoBehaviour
 {
 
@@ -38,6 +38,16 @@ public class MinigameManager : MonoBehaviour
 		{
 			StartCoroutine(GenerateFloatingGoods());
 		}
+
+		
+	}
+
+	public void ShieldChanged()
+	{
+		var shield = PlayerDataManager.Instance.shield;
+		var shield_max = PlayerDataManager.Instance.shield_max;
+
+		NoMono.Messenger.Broadcast((uint)NoMono.EventType.Player_ShieldChanged, shield, shield_max);
 	}
 
 	private void AwakeSettings()

@@ -20,20 +20,30 @@ public class GoodCollector : MonoBehaviour
 	{
 		MinigameManager.current_count--;
 		Destroy(go);
-		NoMono.Messenger.Broadcast((uint)NoMono.EventType.Player_PickYinLeaf);
-		Debug.Log("Pick");
+		if (go.tag.Equals(Const.tagWood))
+		{ 
+			NoMono.Messenger.Broadcast((uint)NoMono.EventType.Player_PickYinLeaf);
+		}
+		else if (go.tag.Equals(Const.tagFood))
+		{
+			NoMono.Messenger.Broadcast((uint)NoMono.EventType.Player_PickJinLeaf);
+			NoMono.PlayerDataManager.Instance.ShieldAdd(10f);
+			MinigameManager.Instance.ShieldChanged();
+		}
 	}
 
 	private void OnCollisionEnter(Collision collision)
 	{
-		if (collision.rigidbody != null && collision.transform.tag.Equals(Const.tagWood))
-			Collect(collision.rigidbody.gameObject);
+		if (collision.rigidbody != null)
+			if (collision.transform.tag.Equals(Const.tagWood) || collision.transform.tag.Equals(Const.tagFood))
+				Collect(collision.rigidbody.gameObject);
 	}
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.attachedRigidbody != null && other.tag.Equals(Const.tagWood))
-			Collect(other.attachedRigidbody.gameObject);
+		if (other.attachedRigidbody != null)
+			if (other.tag.Equals(Const.tagWood) || other.tag.Equals(Const.tagFood))
+				Collect(other.attachedRigidbody.gameObject);
 	}
 
 }

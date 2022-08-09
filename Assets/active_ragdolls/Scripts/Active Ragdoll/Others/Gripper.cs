@@ -86,8 +86,9 @@ namespace ActiveRagdoll {
         }
 
         private void OnCollisionExit(Collision collision) {
-            if (collision.rigidbody == _lastCollision && collision.transform.tag.Equals(Const.TagGrippable))
-                _lastCollision = null;
+            if (collision.rigidbody == _lastCollision)
+				if (collision.transform.tag.Equals(Const.TagGrippable))
+					_lastCollision = null;
         }
 
         private void OnTriggerExit(Collider other) {

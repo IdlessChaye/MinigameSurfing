@@ -295,6 +295,7 @@ namespace NoMono
 		private void OnPickJinLeaf()
         {
 			Debug.Log("OnPickJinLeaf");
+			PlayerDataManager.Instance.foodCount++;
 			var amount = PlayerDataManager.Instance.foodCount;
 			_mono.JinLeaf.text = amount.ToString();
         }

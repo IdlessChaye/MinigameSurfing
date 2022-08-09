@@ -24,7 +24,23 @@ namespace NoMono
 		public float boss_hp = 100f;
 		public float boss_hp_max = 100f;
 
-		public int foodCount = 0;
-		public int woodCount = 0;
+		public int foodCount = -1;
+		public int woodCount = -1;
+
+		public float shield_liushi_rate = 0.5f;
+		public float shield_liushi = 1f;
+		public float ShieldLiushiPerSecond(float deltaTime)
+		{
+			shield -= shield_liushi * shield_liushi_rate * deltaTime;
+			shield = Mathf.Clamp(shield, 0, shield_max);
+			return shield;
+		}
+
+		public float ShieldAdd(float count)
+		{
+			shield += count;
+			shield = Mathf.Clamp(shield, 0, shield_max);
+			return shield;
+		}
 	}
 }
